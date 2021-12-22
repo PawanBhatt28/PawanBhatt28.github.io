@@ -1,0 +1,182 @@
+
+div{
+    display: inline-block;
+}
+.main-body{
+    position: absolute;
+    top: 6.5%;
+    padding: 2.5%;
+    width: 93vw;
+   /* left: 2.56%; 
+    margin-left: -8px; */
+    z-index: 1;
+}
+
+/*rgba(37, 77, 124, 0.5);*/
+header .navbar {
+    width: 100vw;
+    height: 8.5vh;
+    margin-top: -1.1vh;
+    margin-left: -9px;
+    background-color: rgba(255, 255, 255, 0);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    position: fixed;
+    z-index:2;
+}
+.navbar a{
+    font-size: 160%; ;/*1.7vw; */
+    text-decoration: none;
+    font-family:"Arial Black", sans-serif;
+    font-weight: 500;
+    margin:2%;
+    padding: 0.3% 2%  0.3% 2%;
+    color: white;
+    background-color: black;
+    border-radius: 40px;
+    position: relative;
+    height: 100%;
+    top: 25%;
+    left: 23%;
+    
+}
+
+.navbar a:hover{
+    background-color: rgb(99, 157, 243);
+    color : black;
+} 
+.navbar ul{
+    padding: 0%;
+    margin: 0%;
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    top: 0%
+}
+
+.navbar li{
+    display: inline;
+    text-align: justify;
+    list-style: none;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+}
+
+/*
+.navbar:hover{
+    background-color: rgb(99, 157, 243);
+}
+*/
+
+.box{
+    width: 19vw;
+    height: 35vh;
+    margin: 2% 2% 2%;
+    border-radius: 6%; 
+    background-color: black;
+    background-size:19vw 29vh;
+    background-repeat: no-repeat;
+
+}
+
+.resource-link{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+
+.box1{
+    background-image: url("illustration/1.png");
+}
+.box2{
+    background-image: url("illustration/2.png");
+}
+.box3{
+    background-image: url("illustration/3.jpg");
+}
+.box4{
+    background-image: url("illustration/4.jpg");
+}
+.box5{
+    background-image: url("illustration/5.jpg");
+}
+.box6{
+    background-image: url("illustration/6.png");
+}
+.box7{
+    background-image: url("illustration/7.jpg");
+}
+.box8{
+    background-image: url("illustration/8.jpg");
+}
+.box9{
+    background-image: url("illustration/9.jpg")
+}
+.box10{
+    background-image: url("illustration/10.jpg")
+}
+.box11{
+    background-image: url("illustration/11.png");
+}
+.box12{
+    background-image: url("illustration/12.png");
+}
+.box13{
+    background-image: url("illustration/13.png");
+}
+.box14{
+    background-image: url("illustration/14.png");
+}
+.box15{
+    background-image: url("illustration/15.png");
+}
+
+
+div.box{
+    position: relative;
+}
+div.box #name{
+    color: white;
+    font-size: 1.7vw;
+    /*font-size: 180%;*/
+    font-weight: 550;
+    font-family: monospace;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); 
+
+}
+
+#bodyID{
+    background-image: url(background/blue2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Custon Scroll Bar*/
+
+::-webkit-scrollbar{
+    width: 0.5vw;
+}
+
+::-webkit-scrollbar-track{
+    background: rgba(1, 46, 77, 0.5)
+}
+::-webkit-scrollbar-thumb{
+    background: #2a92ec;
+    border-radius: 5px;
+}
+
+/* Box animation on hover*/
+
+.box{
+        transition: all 0.4s ease-in-out;
+    }
+.box:hover{
+        transform: scale(1.2);
+        z-index : 5;
+    }   
+

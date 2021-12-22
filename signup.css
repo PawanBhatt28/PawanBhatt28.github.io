@@ -1,0 +1,139 @@
+body{
+    background-image: url("background/riverboat.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+}
+/* NAVIGATION BAR */
+.navbar-class {
+    width: 100vw;
+    height: 8.5vh;
+    margin-top: -2.2vh;
+    margin-left: -9px;
+    background-color: rgba(0, 0, 0, 1);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    position: fixed;
+    z-index:2;
+}
+.navbar-class a{
+    font-size: 160%; ;/*1.7vw; */
+    text-decoration: none;
+    font-family:"Arial Black", sans-serif;
+    font-weight: 500;
+    margin:2%;
+    color: white;
+    position: relative;
+    height: 100%;
+    top: 23%;
+    left: 29%;
+
+}
+.navbar-class a:hover{
+    color: black;
+
+}
+.navbar-class ul{
+    padding: 0%;
+    margin: 0%;
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    top: 0%
+}
+.navbar-class li{
+    display: inline;
+    text-align: justify;
+    list-style: none;
+    position: relative;
+}
+.navbar-class:hover{
+    background-color: rgb(99, 157, 243);
+} */
+::-webkit-scrollbar{
+    width: 0.5vw;
+}
+
+::-webkit-scrollbar-track{
+    background: rgba(1, 46, 77, 0.5)
+}
+::-webkit-scrollbar-thumb{
+    background: #2a92ec;
+    border-radius: 5px;
+}
+/*
+.signupHeading{
+    width: 100vw;
+    height: 17vh;
+    margin-top: -1.1vh;
+    margin-left : -0.5vw;
+    background-color: white;
+    position: absolute;
+    top: 8.5vh;
+    color: black;
+    font-family: 'Stencil Std', fantasy;
+    font-size: 5vw;   
+}
+
+.signupHeading p{
+    position: relative;
+    margin: 0;
+    top : 10%;
+    left : 10%;
+}
+*/
+.theformtable{
+    width: 50vw;
+    height: 85vh;
+    position : relative;
+    top : 5vh;
+    left: 46vw;
+    margin: 0%;
+    background-color: transparent;
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter : blur(2px);
+    border-radius: 70px;
+}
+form {
+    display: block;
+    position: absolute;
+    top : 5%;
+    left: 5%;
+    line-height: 10vh;
+}
+form label{
+    font-size: 1.5vw;
+    font-weight: 300;
+    font-family: Ubuntu, "times new roman", times, roman, serif;
+    color: black;
+    border-radius: 20px;
+    padding: 3% 8%  3% 8%;
+    background-color: white;
+}
+
+form input, textarea{
+    padding-left: 5%;
+    padding-right: 5%;
+    color: white;
+    position: relative;
+    font-family: monospace;
+    border-radius: 22px;
+    background-color: rgba(255,255,255,0.1);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    font-size: x-large;
+    width: 15vw;
+    height: 5vh;
+}
+table{
+    border-collapse : separate;
+    border-spacing: 6vw 0;
+}
+textarea{
+    padding: 5%;
+    resize: none;
+    height: 20vh;
+    width: 17vw;
+    font-size: large;
+}

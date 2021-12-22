@@ -1,0 +1,15 @@
+.child1{
+    position: absolute;
+}
+.child2{
+    position: relative;
+}
+.child3{
+    position: fixed;
+}
+.child4{
+    position:static;
+}
+.child5{
+    position: sticky;
+}
