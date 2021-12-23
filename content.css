@@ -1,5 +1,5 @@
 #bodyID {
-    background-image: url(D:/IWT/background/forest2.png);
+    background-image: url("background/forest2.png");
     background-attachment: fixed;
     background-size: cover;
     margin : 0;
@@ -57,13 +57,7 @@ header .navbar {
     transition: all 0.5s ease-in-out;
 }
 
-.navbar li{
-    display: inline;
-    text-align: justify;
-    list-style: none;
-    position: relative;
-    transition: all 0.5s ease-in-out;
-}
+
 .header-strip{
     display: block;
     position: absolute;
