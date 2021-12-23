@@ -4,16 +4,20 @@ div{
 }
 .main-body{
     position: absolute;
-    top : 7vh;
-    padding: 2.5%;
+    margin-top: 4.27rem;
     z-index: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
 } 
 
 /*rgba(37, 77, 124, 0.5);*/
 header .navbar {
     position: absolute;
     width: 100vw;
-    height: 7vh;
+    height: 3.15rem;
     background-color: rgba(0, 0, 0, 1);
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
@@ -21,24 +25,25 @@ header .navbar {
     z-index:2;
 }
 .navbar-items2 a{
-    font-size: 1.2vw; ;
+    font-size: 1.2rem; 
     text-decoration: none;
     font-family: "ubuntu";
     font-style: normal;
+
     color: white;
     background-color: black;
     font-weight: 650;
-    
-    position: relative;
+
     display: inline-block;
     
     padding-top : 0.922%;
     padding-bottom : 0.922%;
     padding-left: 2%;
     padding-right: 2%;
-
+    
+    position: relative;
     top: 0;
-    left: 32%;
+    left: 32vw;
     
 }
 
@@ -64,12 +69,14 @@ header .navbar {
 
 
 .box{
-    width: 19vw;
-    height: 35vh;
+    width: 18.226rem;
+    min-width: 15rem;
+    height: 16rem;
+    min-height: 13.168rem;
     margin: 2% 2% 2%;
     border-radius: 6%; 
     background-color: black;
-    background-size:19vw 29vh;
+    background-size:18.5rem 13.2rem;
     background-repeat: no-repeat;
 
 }
@@ -133,7 +140,7 @@ div.box{
 }
 div.box #name{
     color: white;
-    font-size: 1.7vw;
+    font-size: 1.35rem;
     /*font-size: 180%;*/
     font-weight: 550;
     font-family: monospace;
