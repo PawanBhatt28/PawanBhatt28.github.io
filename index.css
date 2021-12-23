@@ -15,7 +15,7 @@ div{
 /*rgba(37, 77, 124, 0.5);*/
 header .navbar {
     width: 100vw;
-    height: 8.5vh;
+    height: 7vh;
     margin-top: -1.1vh;
     margin-left: -9px;
     background-color: rgba(0, 0, 0, 1);
@@ -25,24 +25,25 @@ header .navbar {
     z-index:2;
 }
 .navbar a{
-    font-size: 160%; ;/*1.7vw; */
+    font-size: 1.2vw; ;/*1.7vw; */
     text-decoration: none;
-    font-family:"Arial Black", sans-serif;
-    font-weight: 500;
-    margin:2%;
-    padding: 0.3% 2%  0.3% 2%;
+    font-family:sans-serif;
+    font-style: normal;
+    font-weight: 650;
+    padding-top : 1%;
+    padding-bottom : 1%;
+    padding-left: 2%;
+    padding-right: 2%;
     color: white;
     background-color: black;
-    border-radius: 40px;
     position: relative;
-    height: 100%;
-    top: 25%;
-    left: 23%;
+    top : 30%;
+    left: 33%;
     
 }
 
 .navbar a:hover{
-    background-color: rgb(99, 157, 243);
+    background-color: white;
     color : black;
 } 
 .navbar ul{
