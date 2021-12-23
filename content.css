@@ -5,50 +5,10 @@
 }
 
 
-/*
-.navbar-class{
-    position: absolute;
+header .navbar {
+    display: block;
     width: 100vw;
-    height: 8.5vh;
-    background-color: rgba(0,0,0,0.9);
-    margin-top: -1.1vh;
-    margin-left: -0.5vw;
-    -webkit-backdrop-filter: blur(8px);
-    backdrop-filter: blur(8px);
-    position: fixed;
-    z-index:2;
-}
-
-.navbar-class ul{
-    list-style: none;
-    align-items: center;
-    
-}
-
-.navbar-class li{
-    display: inline-block;
-}
-.navbar-class a{
-    position: relative;
-    text-decoration: none;
-    color: white;
-    line-height: 5vh;
-    font-size: 4vh;
-    font-weight: 800;
-    font-family:monospace;
-    margin: 2vw;
-    left: 23vw;
-}
-.navbar-class:hover{
-    background-color: rgb(27, 88, 201);
-}
-.navbar-class a:hover{
-    color: black;
-} */
-
-.navbar-class {
-    width: 100vw;
-    height: 8.5vh;
+    height: 7vh;
     margin-top: -1.1vh;
     margin-left: -9px;
     background-color: rgba(0, 0, 0, 1);
@@ -57,24 +17,29 @@
     position: fixed;
     z-index:2;
 }
-.navbar-class a{
-    font-size: 160%; ;/*1.7vw; */
+.navbar a{
+    font-size: 1.2vw; ;/*1.7vw; */
     text-decoration: none;
-    font-family:"Arial Black", sans-serif;
-    font-weight: 500;
-    margin:2%;
+    font-family: "ubuntu";
+    font-style: normal;
+    font-weight: 650;
+    padding-top : 1%;
+    padding-bottom : 1%;
+    padding-left: 2%;
+    padding-right: 2%;
     color: white;
+    background-color: black;
     position: relative;
-    height: 100%;
-    top: 23%;
-    left: 29%;
-
+    top : 30%;
+    left: 33%;
+    
 }
-.navbar-class a:hover{
-    color: black;
 
-}
-.navbar-class ul{
+.navbar a:hover{
+    background-color: white;
+    color : black;
+} 
+.navbar ul{
     padding: 0%;
     margin: 0%;
     position: absolute;
@@ -82,25 +47,23 @@
     height: 100%;
     top: 0%
 }
-.navbar-class li{
+
+.navbar li{
     display: inline;
     text-align: justify;
     list-style: none;
     position: relative;
+    transition: all 0.5s ease-in-out;
 }
-.navbar-class:hover{
-    background-color: rgb(99, 157, 243);
-}
-
 .header-strip{
+    display: block;
     position: absolute;
     width: 100%;
     height: 17vh;
-    margin-top: -1.1vh;
     margin-left : -0.5vw;
     background-image: url('background/blue.png');
     background-size: cover;
-    top: 8.5vh;
+    top: 7% ;
 }
 
 /* PROFILE HEADER */
