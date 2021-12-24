@@ -2,6 +2,13 @@
 div{
     display: inline-block;
 }
+#bodyID{
+    background-image: url(background/blue2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+}
+
 .main-body{
     position: absolute;
     margin-top: 4.27rem;
@@ -13,17 +20,17 @@ div{
     align-items: center;
 } 
 
-/*rgba(37, 77, 124, 0.5);*/
 header .navbar {
-    position: absolute;
     width: 100vw;
     height: 3.15rem;
+    
     background-color: rgba(0, 0, 0, 1);
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
-    position: fixed;
+    
     z-index:2;
-
+    
+    position: fixed;
     
 }
 
@@ -159,12 +166,6 @@ div.box #name{
 
 }
 
-#bodyID{
-    background-image: url(background/blue2.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    margin: 0;
-}
 
 /* Custon Scroll Bar*/
 
