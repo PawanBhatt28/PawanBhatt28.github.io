@@ -2,7 +2,7 @@ div{
     display: inline-block;
 }
 #body{
-    background-image: url("background/red.png");
+    background-image: url("background/riverboat.png");
     background-size: cover;
     background-attachment: fixed;
     margin: 0;
