@@ -92,11 +92,11 @@ header .navbar {
     background-color: black;
     background-size:18.5rem 13.2rem;
     background-repeat: no-repeat;
-    transition: all 0.6s ease-in-out;   
-    transition-delay: 0.2s;
+    transition: all 0.7s ease-in-out;  
+   /* transition-delay: 0.2s; */
 }
 .box:hover{
-    transform : rotate(360deg) scale(1.1);
+    transform : scale(1.25);
     z-index: 5;
 }
 
@@ -171,10 +171,8 @@ div.box #name{
 }
 
 
-
-
 ::-webkit-scrollbar{
-    width: 0.5vw;
+    width: 0.4rem;
 }
 
 ::-webkit-scrollbar-track{
@@ -182,5 +180,5 @@ div.box #name{
 }
 ::-webkit-scrollbar-thumb{
     background: #2aec44;
-    border-radius: 5px;
+    border-radius: 0rem;
 }
