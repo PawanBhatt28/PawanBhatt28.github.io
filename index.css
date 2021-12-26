@@ -137,7 +137,7 @@ header .navbar {
    background-image: url(course-photo/css.png);
 }
 .box9{
-    background-image: url(course-photo/javscript.jpg)
+    background-image: url(course-photo/javascript2.jpg)
 }
 .box10{
     background-image: url(course-photo/dataScience.jpg)
@@ -179,14 +179,13 @@ div.box #name{
 /* Custon Scroll Bar*/
 
 ::-webkit-scrollbar{
+    scroll-behavior: smooth;
     width: 0.5vw;
 }
-
 ::-webkit-scrollbar-track{
-    background: rgba(1, 46, 77, 0.5)
+    background: white;
 }
 ::-webkit-scrollbar-thumb{
     background: #2a92ec;
-    border-radius: 5px;
 }
 
