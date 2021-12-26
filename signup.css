@@ -160,3 +160,15 @@ textarea{
     width: 17vw;
     font-size: large;
 }
+
+::-webkit-scrollbar{
+    width: 0.4rem;
+}
+
+::-webkit-scrollbar-track{
+    background: rgba(242, 244, 245, 0.5)
+}
+::-webkit-scrollbar-thumb{
+    background: #2aec44;
+    border-radius: 0rem;
+}
