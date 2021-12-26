@@ -117,8 +117,6 @@ header .navbar {
     margin : 0.25rem;
     padding-left: 1rem;
     padding-right: 0.55rem;
-
-    z-index : 10;
 }
 ::placeholder{
     color: black;
