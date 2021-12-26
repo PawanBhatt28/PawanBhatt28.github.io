@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 #bodyID {
     background-image: url(background/green.jpg);
     background-attachment: fixed;
@@ -75,8 +78,9 @@ header .navbar {
     list-style: none;
 }
 
-/* COURE BOX */
 
+
+/* COURsE BOX */
 
 .box{
     width: 18.226rem;

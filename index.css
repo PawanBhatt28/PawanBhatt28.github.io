@@ -1,3 +1,7 @@
+
+html{
+    scroll-behavior: smooth;
+}
 #bodyID{
     background-image: url(background/blue2.jpg);
     background-size: cover;
@@ -185,5 +189,4 @@ div.box #name{
     background: #2a92ec;
     border-radius: 5px;
 }
-
 
