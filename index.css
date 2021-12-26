@@ -94,6 +94,14 @@ header .navbar {
     flex-flow : row wrap;
     justify-content: center;
 }
+.searchbar img{
+    height: 2.5rem ;
+    position: absolute;
+    top: 0.3rem;
+    left: 34rem;
+   
+
+}
 .searchbar input{
     width: 20rem;
     border-radius: 3rem;
@@ -104,8 +112,10 @@ header .navbar {
     color: white;
     font-size: 1.2rem;
 
-    padding-left: 0.55rem;
+    padding-left: 1rem;
     padding-right: 0.55rem;
+
+    z-index : 10;
 }
 ::placeholder{
     color: black;
