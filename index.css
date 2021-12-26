@@ -96,8 +96,10 @@ header .navbar {
 }
 .searchbar img{
     height: 2.5rem ;
-    position: absolute;
-    top: 0.3rem;
+
+
+    justify-content: 0.25rem space-between;
+    align-self: center;
     left: 34rem;
    
 
@@ -111,7 +113,8 @@ header .navbar {
 
     color: white;
     font-size: 1.2rem;
-
+    
+    margin : 0.25rem;
     padding-left: 1rem;
     padding-right: 0.55rem;
 
