@@ -113,49 +113,49 @@ header .navbar {
 }   
 
 .box1{
-    background-image: url("course-photo/computerNetwork2.jpg");
+    background-image: url(course-photo/computerNetwork3.jpg);
 }
 .box2{
-    background-image: url("illustration/2.png");
+    background-image : url(course-photo/java.jpg);
 }
 .box3{
-    background-image: url("illustration/3.jpg");
+    background-image : url(course-photo/python.jpg);
 }
 .box4{
-    background-image: url("illustration/4.jpg");
+    background-image: url(course-photo/c++1.jpg);
 }
 .box5{
-    background-image: url("illustration/5.jpg");
+    background-image: url("course-photo/Data-Structure.png");
 }
 .box6{
-    background-image: url("illustration/6.png");
+    background-image: url(course-photo/mathematics.png)   ;
 }
 .box7{
-    background-image: url("illustration/7.jpg");
+   background-image: url(course-photo/html.jpg);
 }
 .box8{
-    background-image: url("illustration/8.jpg");
+   background-image: url(course-photo/css.png);
 }
 .box9{
-    background-image: url("illustration/9.jpg")
+    background-image: url(course-photo/javscript.jpg)
 }
 .box10{
-    background-image: url("illustration/10.jpg")
+    background-image: url(course-photo/dataScience.jpg)
 }
 .box11{
-    background-image: url("illustration/11.png");
+    background-image: url(course-photo/blockchain.jpg);
 }
 .box12{
-    background-image: url("illustration/12.png");
+    background-image: url(course-photo/english3.jpg);
 }
 .box13{
-    background-image: url("illustration/13.png");
+    background-image: url(course-photo/interview.jpg);
 }
 .box14{
-    background-image: url("illustration/14.png");
+    background-image: url(course-photo/ml.png);
 }
 .box15{
-    background-image: url("illustration/15.png");
+    background-image: url(course-photo/statistics.png);
 }
 
 
