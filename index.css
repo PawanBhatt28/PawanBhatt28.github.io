@@ -35,8 +35,7 @@ header .navbar {
     z-index:2;
     
     display: flex;
-    position: relative fixed;
-    
+    position: relative;    
 }
 
 .navbar-items2 a{
@@ -155,7 +154,7 @@ header .navbar {
 /* Box animation on hover*/
 
 .box{
-    transition: all 0.4s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 .box:hover{
     transform: scale(1.2);
@@ -163,7 +162,7 @@ header .navbar {
 }   
 
 .box1{
-    background-image: url(course-photo/computerNetwork3.jpg);
+    background-image: url(course-photo/computerNetwork7.jpg);
 }
 .box2{
     background-image : url(course-photo/java.jpg);
