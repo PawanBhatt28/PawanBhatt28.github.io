@@ -2,85 +2,132 @@
 <html>
 
 <head>
-    <title>Be a Homie</title>
+    <title>HOME</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="signup.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Ubuntu:wght@400;500;700&display=swap%22">
-    <link rel="stylesheet" href="signup.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Moo+Lah+Lah&family=Work+Sans&display=swap" rel="stylesheet">
+    <script src="signup.js"></script>
 </head>
 
-<body id="body">
+<body id="bodyID">
+
 
     <header>
         <div class="navbar">
             <div class="navbar-items2">
-                <ul>
-                    <a href="index.html"><li class="navbar-items">HOME</li></a>
-                    <a href="#"><li class="navbar-items">CONTENT</li></a>
-                    <a href="#"><li class="navbar-items">CONTACT</li></a>
-                    <a href="signup.html"><li class="navbar-items">REGISTER</li></a>
-                </ul>
+
+                    <ul>
+                        <a href="index.html">
+                            <li class="navbar-items">HOME</li>
+                        </a>
+                        <a href="#" onclick="document.getElementById('cont').innerHTML=document.readyState" id="cont">
+                            <li class="navbar-items">CONTENT</li>
+                        </a>
+                        <a href="#">
+                            <li class="navbar-items">CONTACT</li>
+                        </a>
+                        <a href="signup.html">
+                            <li class="navbar-items">REGISTER</li>
+                        </a>
+                        <a href="profilePage.html" id="profileButton"> <img src="icons/woman.png" alt=""></a>
+                    </ul>
+
+                    
+
+
             </div>
         </div>
 
+    </header>   
 
-    </header>
+    <main id="main-body">
 
-    <main>
-
-        <div class="main-body">
-            <div class="theformtable">
-                <form>
-                    <table>
-
+        <div id="theformdiv">
+            
+            <div id="formHeading">
+                <h2>REGISTER</h2>
+            </div>
+            
+            <div id="theformchild">
+                <form action="" id="form1">
+                    <table class="table1">
                         <tr>
-                            <td> <label for="name">name</label></td>
-                            <td><input type="text" id="name"></td>
-                        </tr>
-
-
-                        <tr>
-                            <td> <label for="username">username</label></td>
-                            <td><input type="text" id="username"></td>
-                        </tr>
-
-
-                        <tr>
-                            <td> <label for="email">email</label></td>
-                            <td><input type="email" id="email"></td>
+                            <td><label for="name">FULL NAME</label></td>
+                            <td><input type="text" required id="name"></td>
                         </tr>
 
                         <tr>
-                            <td> <label for="password">password</label></td>
-                            <td><input type="password" id="password"></td>
+                            <td><label for="username">USERNAME</label></td>
+                            <td><input type="text" required id="username"></td>
                         </tr>
-
 
                         <tr>
-                            <td> <label for="dob">birthday </label></td>
-                            <td><input type="date" id="dob"></td>
+                            <td><label for="gender">GENDER</label></td>
+                            <td><select name="gender" id="gender">
+                                    <option value="female">Female</option>
+                                    <option value="male">Male</option>
+                                    <option value="lgbtq">LGBTQ</option>
+                                </select>
+                            </td>
                         </tr>
-
 
                         <tr>
-                            <td><label for="aboutyourself">about</label></td>
-                            <td><textarea type="text" id="aboutyourself"></textarea></td>
+                            <td><label for="education">EDUCATION</label></td>
+                            <td>
+                                <select name="edu" id="education">
+                                    <option value="Secondary">Secondary</option>
+                                    <option value="senior">Senior Secondary</option>
+                                    <option value="undergr">Under Graduate</option>
+                                    <option value="postgr">Post Graduate</option>
+                                </select>
+                            </td>
                         </tr>
 
+                        <tr>
+                            <td><label>DATE OF BIRTH</label></td>
+                            <td><input type="date"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="aboutyou">ABOUT YOU</label></td>
+                            <td>
+                                <textarea name="about" id="aboutyou" cols="30" rows="7" maxlength="200"></textarea>
+                            </td>
+                        </tr>
                     </table>
+                </form>
+                <form action="" id="form2">
+                    <table id="table2">
+                        <tr>
+                            <td><label for="email">EMAIL</label></td>
+                            <td><input type="email" required id="email"></td>
+                        </tr>
 
+                        <tr>
+                            <td><label for="password">PASSWORD</label></td>
+                            <td><input type="password" required id="password"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="repassword">CONFIRM PASSWORD</label></td>
+                            <td><input type="password" required id="repassword"></td>
+                        </tr>
+                    </table>
+                    <br>
+                    <input type="submit" value="SUBMIT" id="submit" onmousedown="submitfunc(this)"
+                        onmouseup="submitfunc2(this)">
                 </form>
             </div>
-
-
         </div>
-
 
 
 
 
     </main>
-
-
 </body>
 
 </html>

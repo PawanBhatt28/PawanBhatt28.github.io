@@ -1,0 +1,212 @@
+
+#bodyID{
+    overflow-x: hidden;
+
+    background-image: url(background/forest2.png);
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+
+    width: 100vw;
+}
+
+#main-body{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+
+    height: 100%;
+    width: 100%;
+}
+
+/* NAVBAR START */
+header .navbar {
+    width: 100vw;
+    height: 3.15rem;
+    
+    background-color: rgba(0, 0, 0, 1);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+
+    z-index:2;
+    
+}
+
+.navbar-items2 a{
+    font-size: 1.2rem; 
+    text-decoration: none;
+    font-family: "ubuntu";
+    font-style: normal;
+
+    color: white;
+    background-color: black;
+    font-weight: 650;
+
+    display: inline-block;
+    
+    padding-top : 0.922%;
+    padding-bottom : 0.922%;
+    padding-left: 2%;
+    padding-right: 2%;
+    
+    position: relative;
+    top: 0;
+    /*left: 32vw;*/
+    
+}
+
+.navbar a:hover{
+    background-color: white;
+    color : black;
+} 
+.navbar ul{
+    padding: 0%;
+    margin: 0%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+
+    display: flex;
+    flex-flow : row wrap;
+    align-items: center;
+    justify-content:center;
+}
+
+.navbar li{
+    display: inline;
+    list-style: none;
+}
+.navbar #profileButton{
+    left: 26rem;
+    height: 97%;
+    width: 3rem;
+    background-color:black;
+    color:black;
+    border-radius: 50%;
+    margin:0;
+    padding: 0;
+    transition: all 0.5s ease-in-out;
+}
+.navbar #profileButton img{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    
+}
+.navbar #profileButton:hover{
+    background-color: white;
+}
+
+/* Name heading */
+
+main .nameHeading{
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    width: 50vw;
+    height: 5rem;
+    background-color: white;
+    /* background-image : url(background/comb.jpg); */
+
+    /* background-size:contain; */
+
+    margin: 0.5rem;
+    color:black;
+    border-radius: 2rem;
+    box-shadow: 0.7rem 0.5rem 1rem   rgb(0, 0, 0);
+    transition: all 0.2s ease-in;
+}
+main .nameHeading h1{
+    background-color: rgba(221, 228, 245, 0.1);
+
+    color:black;
+    border-radius: 1rem;
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Proza Libre', sans-serif;;
+}
+main .nameHeading a{
+    height: auto;
+    width: auto;
+    text-decoration: none;
+}
+main .nameHeading:hover{
+    animation: shake 3s ease-in-out;
+    animation-delay: 0.2s;
+}
+  @keyframes shake {
+    5% { transform: translateX(10px) ; }
+    10% { transform: scale(1.2) ;}
+    20% { transform: translateX(10px) ; }
+    30% { transform: translateX(-1.2) ; }
+    40% { transform: scale(10px) ; }
+    50% { transform: translateX(-10px) ; }
+    60% { transform: scale(-5) ; }
+    70% { transform: translateX(-10px) ; }
+    80% { transform: scale(1.7) ; }
+    90% { transform: translateX(-10px) ; }
+    100% { transform: scale(50); }
+  }
+
+main .profileData {
+    width: 80rem;
+    height: 100vh;
+    /* background-image: url(background/lightblue3.png); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* opacity: 0.7; */
+    border-radius: 2rem;
+
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+}
+
+main .profileData #profileDataButton ul{
+
+    width: 100%;
+    height: 5rem;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+#profileDataButton ul .button{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+
+    background-color : white;
+    color: black;
+
+    box-shadow: 0.4rem 0.4rem  0.5rem black;
+
+    height: 3.5rem;
+    width: 12rem;
+    border-radius: 2rem;
+
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-size: 2rem;
+    font-weight:550;
+    transition: all 0.2s ease-in-out;
+}
+#profileDataButton ul a{
+    text-decoration: none;
+}
+#profileDataButton ul .button:hover{
+    transform: translateY(0.2rem);
+}
+main #profileSections {
+
+}
