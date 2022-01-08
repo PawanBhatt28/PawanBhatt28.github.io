@@ -124,6 +124,8 @@ header .navbar {
     font-size : 1rem;
     font-family: 'Poppins';
     
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
     outline: none;
 
 }
@@ -135,17 +137,24 @@ header .navbar {
     font-weight: 500;
     color : white;
     background-color : rgb(0, 0, 0);
+
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }
 
 #main-body #courseSection{
     display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-content: flex-end;
+    flex-flow: row wrap;
+    justify-content:space-between;
+    /* align-content: flex-end; */
 
     width: 100vw;
     height: auto;
     background-color: white;
+
+    padding: 0 0 2rem 0;    
 }
 
 #main-body #resultCount{
@@ -162,18 +171,51 @@ header .navbar {
 
     padding: 1rem 1rem 1rem 3rem;
 }
-#main-body #courseResult{
+#courseSection #filter-section{
+    /* display: flex;
+    flex-flow: row wrap; */
+    /* justify-self: flex-start; */
+
+
+    height: 15rem;
+    width: 15rem;
+
+    background-color: white;
+    line-height: 1.5rem;
+
+    position: relative;
+    top: 5rem;
+    padding: 0.5rem 0rem 0rem 2rem;
+    font-family:'Source Sans Pro', sans-serif;
+
+}
+#filter-section ul{
+    display: flex;
+    flex-flow: column wrap;
+    justify-self: flex-start;
+    line-height: 1.5rem;
+
+    position: relative;
+    left: 1rem;
+
+    text-decoration: none;
+    list-style: none;
+}
+
+#courseSection #courseResult{
     display: flex;
     flex-flow: row wrap;
+
+
     justify-content: center;
     align-content: center;
 
     width: 80vw;
     height: auto;
 
-    padding: 2rem 2rem 2rem 0rem;
+    padding: 2rem 0.9rem 0rem 0rem;
 
-    background-color: rgb(255, 252, 252);
+    background-color: rgb(246, 246, 248);
 }
 
 
@@ -191,25 +233,32 @@ header .navbar {
     padding : 1.3rem 1rem 0rem 3rem;
 
     font-family:'Source Sans Pro', sans-serif;
-    font-size: 1.2rem;
-    transition: all 0.1s ease-in;
+    font-size: 1.3rem;
+    font-weight: 600;
+    transition: all 0.1s ease-in-out;
 }
 
 #courseResult .result:hover{
-    /* border: 0.01rem grey solid; */
     box-shadow: 2px 2px 3px grey;
     transform: scale(1.001);
 }
-
+#courseResult .published-updated{
+    font-family: "Fira Mono", "Andale Mono", "Consolas", monospace;
+    font-size: 0.9rem;
+    font-weight: 100;
+    color: rgb(151, 149, 149);
+}
 #courseResult .rating{
     text-align: end;
-    font-size : smaller;
-    color : rgb(80, 167, 238);
-    
+    font-size: 1rem;
+    font-weight: 300;
+    color : rgb(80, 167, 238);    
 }
 
 #courseResult .author{
+    font-size: 1rem;
+    font-weight: 300;
     font-size: smaller;
     color : grey;
-    align-self: flex-end;
+    text-align: end;
 }   

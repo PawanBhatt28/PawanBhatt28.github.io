@@ -9,7 +9,9 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Ubuntu:wght@400;500;700&display=swap%22">
     <!-- <link rel="icon" type="image/x-icon" href="favicons/hom2.svg"> -->
 
-    <style>@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');</style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+    </style>
 </head>
 
 
@@ -21,21 +23,21 @@
         <div class="navbar">
             <div class="navbar-items2">
 
-                    <ul>
-                        <a href="index.html" >
-                            <li class="navbar-items" >HOME</li>
-                        </a>
-                        <a href="#" onclick="document.getElementById('cont').innerHTML=document.readyState" id="cont">
-                            <li class="navbar-items">CONTENT</li>
-                        </a>
-                        <a href="#" >
-                            <li class="navbar-items">CONTACT</li>
-                        </a>
-                        <a href="signup.html">
-                            <li class="navbar-items">REGISTER</li>
-                        </a>
-                        <a href="profilePage.html" id="profileButton"> <img src="icons/woman.png" alt=""></a>
-                    </ul>
+                <ul>
+                    <a href="index.html">
+                        <li class="navbar-items">HOME</li>
+                    </a>
+                    <a href="#" onclick="document.getElementById('cont').innerHTML=document.readyState" id="cont">
+                        <li class="navbar-items">CONTENT</li>
+                    </a>
+                    <a href="#">
+                        <li class="navbar-items">CONTACT</li>
+                    </a>
+                    <a href="signup.html">
+                        <li class="navbar-items">REGISTER</li>
+                    </a>
+                    <a href="profilePage.html" id="profileButton"> <img src="icons/woman.png" alt=""></a>
+                </ul>
             </div>
         </div>
     </header>
@@ -53,53 +55,77 @@
         </div>
 
         <div id="courseSection">
+
+            <aside id="filter-section">
+                <h3>Filter</h3>
+                <ul>
+                    <li><h4>Sort</h4></li>
+                    <li><ul>
+                        <li><input type="radio" id="rating-filter" name="sort"><label for="rating-filter">Rating</label></li>
+                        <li><input type="radio" id="hours-watched" name="sort"><label for="hours-watched">Hours Watched</label></li>
+                        <li><input type="radio" id="level" name="sort"><label for="level">Difficulty</label></li>
+                    </ul></li>
+                </ul>
+            </aside>
+
             <div id="courseResult">
                 <div class="result ">
                     <p>Java for beginners</p>
-                    <p class="rating">1900</p>
-                    <p class="author">Pawan Bhatt</p>
+                    <p class="rating" title="Rating">1900</p>
+                    <p class="author" title="Author">Pawan Bhatt</p>
+                    <span class="published-updated">published: a month ago,  updated: 3 days ago</span>
                 </div>
+
                 <div class="result ">
                     <p>Java + DSA</p>
-                    <p class="rating">1780</p>
-                    <p class="author">Yash Mahor</p>
-                    
+                    <p class="rating" title="Rating">1780</p>
+                    <p class="author" title="Author">Yash Mahor</p>
+                    <span class="published-updated">published: 2 month ago,  updated: 3 days ago</span>
+
 
                 </div>
 
                 <div class="result ">
                     <p>Java full course</p>
-                    <p class="rating">648</p>
-                    <p class="author">Ishita </p>
+                    <p class="rating" title="Rating">648</p>
+                    <p class="author" title="Author">Ishita </p>
+                    <span class="published-updated">published: 7 month ago,  updated: a month ago</span>
 
-                    
+
                 </div>
 
                 <div class="result ">
                     <p>Java tutorial in Hindi</p>
-                    <p class="rating">1780</p>
-                    <p class="author">Singleton</p>
+                    <p class="rating" title="Rating">1780</p>
+                    <p class="author" title="Author">Singleton</p>
+                    <span class="published-updated">published: 1 week ago,  updated: 1 week ago</span>
 
                 </div>
 
                 <div class="result ">
                     <p>Java with DSA</p>
-                    <p class="rating">498</p>
-                    <p class="author">Neetika</p>
+                    <p class="rating" title="Rating">498</p>
+                    <p class="author" title="Author">Neetika</p>
+                    <span class="published-updated">published: a year ago,  updated: 3 weeks ago</span>
+
                 </div>
 
                 <div class="result ">
                     <p>ReactJs Tutorial</p>
-                    <p class="rating">1541</p>
-                    <p class="author">Tanisha Singh</p>
+                    <p class="rating" title="Rating">1541</p>
+                    <p class="author" title="Author">Tanisha Singh</p>
+                    <span class="published-updated">published: 7 month ago,  updated: a month ago</span>
+
                 </div>
 
-                <div class="result ">
-                    <p>Advanced Java tutorial</p>                  
-                    <p class="rating">940</p>
-                    <p class="author">Praveen Bhatt</p>
+                <div class="result">
+                    <p>Advanced Java tutorial</p>
+                    <p class="rating" title="Rating">940</p>
+                    <p class="author" title="Author">Praveen Bhatt</p>
+                    <span class="published-updated">published: 2 years ago,  updated: 3 days ago</span>
+
                 </div>
-<!-- 
+                <!-- 
                 <div class="result ">
 
                 </div>
@@ -118,4 +144,5 @@
 
 
 </body>
+
 </html>
