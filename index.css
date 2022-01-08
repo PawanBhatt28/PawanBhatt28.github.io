@@ -167,6 +167,7 @@ header .navbar {
     margin: 0.2rem 0.8rem 3rem 0.8rem;
     
     border-radius: 6%; 
+    border: 0.1rem solid black;
     background-color: black;
     background-size:18.5rem 13.2rem;
     background-repeat: no-repeat;
