@@ -5,7 +5,7 @@
 }
 
 #bodyID{
-    background-image: url(background/green.jpg);
+    background-image: url(background/black2.jpg);
     background-attachment: fixed;
     background-size: cover;
 
@@ -107,7 +107,7 @@ header .navbar {
 
 #searchBar {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     justify-content: center;
     align-content: center;
 
@@ -143,6 +143,33 @@ header .navbar {
     border-bottom-right-radius: 0.5rem;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+}
+
+/* Category Dropdown */
+.category {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+
+    width: 5rem;
+    height: 2rem;
+
+    background-color: black;
+    position: relative;
+    top: 0.5rem;
+    margin-right: 0.5rem;
+}
+.category a{
+    color:white;
+    text-decoration: none;
+    font-family: 'Poppins';
+}
+#searchBar .active{
+    background-color: white;
+}
+#searchBar .active a{
+    color:rgb(0, 0, 0);
 }
 
 /* COURsE BOX */
@@ -248,6 +275,6 @@ div.box #name{
     background: rgba(242, 244, 245, 0.5)
 }
 ::-webkit-scrollbar-thumb{
-    background: #2aec44;
+    background: black;
     border-radius: 0rem;
 }

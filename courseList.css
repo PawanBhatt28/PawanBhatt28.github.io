@@ -115,7 +115,7 @@ header .navbar {
 
 #main-body #searchBar {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     justify-content: center;
     align-content: center;
 
@@ -153,6 +153,33 @@ header .navbar {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 }
+/* Category Dropdown */
+.category {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+
+    width: 5rem;
+    height: 2rem;
+
+    background-color: black;
+    position: relative;
+    top: 0.5rem;
+    margin-right: 0.5rem;
+}
+.category a{
+    color:white;
+    text-decoration: none;
+    font-family: 'Poppins';
+}
+#searchBar .active{
+    background-color: white;
+}
+#searchBar .active a{
+    color:rgb(0, 0, 0);
+}
+
 
 #main-body #courseSection{
     display: flex;
@@ -172,7 +199,6 @@ header .navbar {
     flex-flow: row wrap;
     justify-content: flex-start;
     align-items: center;
-
 
     width: 100vw;
     height: 4rem;
@@ -282,5 +308,5 @@ header .navbar {
     font-weight: 300;
     font-size: smaller;
     color : grey;
-    text-align: end;
+    /* text-align: end; */
 }   
