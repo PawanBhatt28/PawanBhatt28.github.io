@@ -18,6 +18,14 @@ body {
     width: 100vw;
     height: auto;
     overflow-x: hidden;
+
+    background-image: url(./background/black2.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    /* background-color: black; */
+
 }
 
 header .navbar {
@@ -111,6 +119,7 @@ header .navbar {
     justify-content: center;
     align-content: center;
 
+    background-color: transparent;
     height: 5rem;
     width: 100vw;
 }
@@ -148,12 +157,12 @@ header .navbar {
 #main-body #courseSection{
     display: flex;
     flex-flow: row wrap;
-    justify-content:space-between;
+    justify-content:space-around;
     /* align-content: flex-end; */
 
     width: 100vw;
     height: auto;
-    background-color: white;
+    background-color: transparent;
 
     padding: 0 0 2rem 0;    
 }
@@ -168,7 +177,7 @@ header .navbar {
     width: 100vw;
     height: 4rem;
     font-family: 'Poppins';
-    background-color : rgb(224, 238, 245);
+    background-color : rgb(208, 237, 252);
 
     padding: 1rem 1rem 1rem 3rem;
 }
@@ -178,15 +187,19 @@ header .navbar {
     /* justify-self: flex-start; */
 
 
-    height: 15rem;
+    height: max-content;
     width: 15rem;
 
+    /* background-color: rgb(217, 234, 250); */
     background-color: white;
+    border-radius: 0.5rem;
+
     line-height: 1.5rem;
 
+    color: black;
     position: relative;
     top: 5rem;
-    padding: 0.5rem 0rem 0rem 2rem;
+    padding: 1rem 0rem 1rem 2rem;
     font-family:'Source Sans Pro', sans-serif;
 
 }
@@ -214,9 +227,10 @@ header .navbar {
     width: 80vw;
     height: auto;
 
-    padding: 2rem 0.9rem 0rem 0rem;
+    padding: 0.5rem 0.9rem 0rem 0rem;
 
-    background-color: rgb(246, 246, 248);
+    /* background-color: rgb(246, 246, 248); */
+    background-color :transparent;
 }
 
 
@@ -232,6 +246,8 @@ header .navbar {
     border-bottom : 0.1rem grey solid;
     /* padding : top bottom right left; tbrl */ 
     padding : 1.3rem 1rem 0rem 3rem;
+
+    border-radius: 0.5rem;
 
     font-family:'Source Sans Pro', sans-serif;
     font-size: 1.3rem;
