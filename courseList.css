@@ -198,7 +198,7 @@ header .navbar {
 #main-body #resultCount{
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
 
     width: 100vw;
@@ -206,7 +206,39 @@ header .navbar {
     font-family: 'Poppins';
     background-color : rgb(208, 237, 252);
 
-    padding: 1rem 1rem 1rem 3rem;
+    padding: 0rem 2rem 0rem 3rem;
+}
+
+#name-count {
+    display: flex;
+    flex-flow : column wrap;
+
+}
+#name-count #result-count{
+    font-size: 0.8rem;
+}
+
+#next-page{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+#next-page p{
+
+    height: 2.5rem;
+    width: 2.5rem;
+    text-align: center;
+
+    margin: 0.5rem;
+    padding: 0.4rem;
+
+    background-color: white;
+    color:black;
+}
+
+#next-page p:hover{
+    border: 0.1rem solid black;
 }
 #courseSection #filter-section{
     /* display: flex;
@@ -311,3 +343,16 @@ header .navbar {
     color : grey;
     /* text-align: end; */
 }   
+
+
+::-webkit-scrollbar{
+    width: 0.4rem;
+}
+
+::-webkit-scrollbar-track{
+    background: rgba(242, 244, 245, 0.5)
+}
+::-webkit-scrollbar-thumb{
+    background: black;
+    border-radius: 0rem;
+}
