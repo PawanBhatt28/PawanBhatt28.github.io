@@ -174,10 +174,11 @@ header .navbar {
     font-family: 'Poppins';
 }
 #searchBar .active{
-    background-color: white;
+    background-color: tomato;
 }
 #searchBar .active a{
-    color:rgb(0, 0, 0);
+    /* color:rgb(0, 0, 0); */
+    color: white;
 }
 
 

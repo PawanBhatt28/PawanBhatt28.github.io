@@ -1,6 +1,8 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    
     /* overflow-x: hidden; */
 }
 
@@ -18,6 +20,8 @@
     height: auto;
 }
 .main-body{
+    /* animation: body-load 1s ease-in-out; */
+
     position: relative;
 
     /* z-index: 1; */
@@ -29,6 +33,7 @@
 }
 
 header .navbar {
+
     position: relative;
     width: 100vw;
     height: 3.15rem;
@@ -166,20 +171,38 @@ header .navbar {
     font-family: 'Poppins';
 }
 #searchBar .active{
-    background-color: white;
+    background-color: tomato;
 }
 #searchBar .active a{
-    color:rgb(0, 0, 0);
+    /* color:rgb(0, 0, 0); */
+    color: white;
+}
+
+ #resultCount{
+    /* box-sizing: border-box; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 100vw;
+    height: 4rem;
+    font-family: 'Poppins';
+    background-color : rgb(208, 237, 252);
+
+    padding: 1rem 1rem 1rem 3rem;
 }
 
 /* COURsE BOX */
 
 .box{
-    width: 18.226rem;
-    min-width: 15rem;
-    height: 16rem;
-    min-height: 13.168rem;
-    margin: 2% 2% 2%;
+    /* width: 18.226rem; */
+    width: 12rem;
+    /* min-width: 15rem; */
+    /* height: 16rem; */
+    height: 8rem;
+    /* min-height: 13.168rem; */
+    margin: 1% 1% 1%;
     border-radius: 6%; 
     border-width: 0.1rem;
     border-color: black;    
@@ -278,3 +301,4 @@ div.box #name{
     background: black;
     border-radius: 0rem;
 }
+

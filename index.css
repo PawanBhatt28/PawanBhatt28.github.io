@@ -17,6 +17,7 @@
 }
 
 .main-body{
+    /* animation: body-load 1s ease-in-out; */
     position: relative;
     z-index: 1;
 
