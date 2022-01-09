@@ -3,11 +3,12 @@
     margin: 0;
     box-sizing: border-box;
     
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 #bodyID{
-    background-image: url(background/black2.jpg);
+    background-image: url(background/grey3.jpg);
+    /* background-color: white; */
     background-attachment: fixed;
     background-size: cover;
 
@@ -196,11 +197,12 @@ header .navbar {
 /* COURsE BOX */
 
 .box{
+    animation: box-load 500ms ease-in-out;
     /* width: 18.226rem; */
-    width: 12rem;
-    /* min-width: 15rem; */
+    /* width: 15rem; */
+    min-width: 15rem;
     /* height: 16rem; */
-    height: 8rem;
+    height: 10rem;
     /* min-height: 13.168rem; */
     margin: 1% 1% 1%;
     border-radius: 6%; 
@@ -209,7 +211,8 @@ header .navbar {
     border-style: solid;
 
     background-color: black;
-    background-size:18.5rem 13.2rem;
+    /* background-size:18.5rem 13.2rem; */
+    background-size: cover;
     background-repeat: no-repeat;
     transition: all 0.3s ease-in-out;  
    /* transition-delay: 0.2s; */
@@ -282,7 +285,20 @@ div.box #name{
     transform: translate(-50%, -50%); 
 
 }
-
+.box #name {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    height: 2rem;
+    width: 100%;
+    background-color: black;
+}
+.box #name p{
+    font-family: Poppins;
+    font-weight: lighter;
+    font-size: smaller;
+}
 .resource-link{
     position: absolute;
     width: 100%;
@@ -302,3 +318,12 @@ div.box #name{
     border-radius: 0rem;
 }
 
+
+@keyframes box-load {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform : rotate(360deg);
+    }
+}
