@@ -221,17 +221,15 @@ header .navbar {
 .box {
   display: flex;
   flex-flow: column wrap;
-
+  justify-content:safe;
+  align-content: safe;
+  
   width: 15rem;
- 
   height: 12rem;
   
-  margin: 1% 1% 1%;
-  border-radius: 6%;
-  border-width: 0.1rem;
-  border-color: black;
-  border-style: solid;
-
+  margin: 1% 1% 1% 1%;
+  border-radius: 1rem;
+  border: 0.1rem solid black;
 
   transition: all 0.3s ease-in-out;
  
@@ -304,5 +302,11 @@ div.box {
 ::-webkit-scrollbar-thumb {
   background: black;
   border-radius: 0rem;
+}
+
+@media only screen and (max-width: 600px){
+    .navbar{
+        display: none ;
+    }
 }
 
