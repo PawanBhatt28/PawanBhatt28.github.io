@@ -192,7 +192,7 @@ header .navbar {
     height: auto;
     background-color: transparent;
 
-    padding: 0 0 2rem 0;    
+    padding: 2rem 0 2rem 0;    
 }
 
 #main-body #resultCount{
@@ -257,15 +257,16 @@ header .navbar {
 
     color: black;
     position: relative;
-    top: 5rem;
+    /* top: 5rem; */
     padding: 1rem 0rem 1rem 2rem;
+    margin: 0 0 2rem 0;
     font-family:'Source Sans Pro', sans-serif;
 
 }
 #filter-section ul{
-    display: flex;
+    /* display: flex;
     flex-flow: column wrap;
-    justify-self: flex-start;
+    justify-self: flex-start; */
     line-height: 1.5rem;
 
     position: relative;
@@ -286,7 +287,7 @@ header .navbar {
     width: 80vw;
     height: auto;
 
-    padding: 0.5rem 0.9rem 0rem 0rem;
+    padding: 0rem 0.9rem 0rem 0rem;
 
     /* background-color: rgb(246, 246, 248); */
     background-color :transparent;
@@ -296,15 +297,15 @@ header .navbar {
 #courseResult .result{
     display: flex;
     flex-flow: column nowrap;
-    justify-content: flex-start;
-    align-content: flex-start;
+    justify-content: center;
+    align-content: center;
 
     width: 100%;
     height: 9rem;
     background-color: white;
     border-bottom : 0.1rem grey solid;
     /* padding : top bottom right left; tbrl */ 
-    padding : 1.3rem 1rem 0rem 3rem;
+    padding : 0rem 1rem 0rem 3rem;  
 
     border-radius: 0.5rem;
 
@@ -324,11 +325,34 @@ header .navbar {
     color : black;
 }
 #courseResult .published-updated{
-    font-family: "Fira Mono", "Andale Mono", "Consolas", monospace;
+    font-family: Ubuntu;
     font-size: 0.9rem;
     font-weight: 100;
     color: rgb(151, 149, 149);
 }
+
+#courseResult .tags {
+    display: flex;
+    flex-flow: row wrap;
+
+    width: 80%;
+}
+
+#courseResult .tags p{
+    margin: 0.2rem;
+    padding: 0 0.2rem 0 0.2rem;
+
+    border-radius: 0.3rem;
+
+    font-size : 0.9rem;
+    font-family: "Fira Mono", "Andale Mono", "Consolas", monospace;
+    font-weight: 500;
+
+    background-color: rgb(213, 227, 247);
+    color:rgb(66, 66, 66);
+}
+
+
 #courseResult .rating{
     text-align: end;
     font-size: 1rem;
@@ -356,3 +380,4 @@ header .navbar {
     background: black;
     border-radius: 0rem;
 }
+
