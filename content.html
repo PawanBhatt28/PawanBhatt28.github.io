@@ -3,42 +3,39 @@
 
 <head>
     <title>Content</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" type="text/css" href="content.css">
+    <link rel="stylesheet" type="text/css" href="content.css" />
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Ubuntu:wght@400;500;700&display=swap%22">
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Ubuntu:wght@400;500;700&display=swap%22" />
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+        @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
     </style>
 </head>
 
 <body id="bodyID">
-
     <header>
         <div class="navbar">
             <div class="navbar-items2">
-
-                <ul>
-                    <a href="index.html">
-                        <li class="navbar-items">HOME</li>
-                    </a>
-                    <a href="#" onclick="document.getElementById('cont').innerHTML=document.readyState" id="cont">
-                        <li class="navbar-items">CONTENT</li>
-                    </a>
-                    <a href="#">
-                        <li class="navbar-items">CONTACT</li>
-                    </a>
-                    <a href="signup.html">
-                        <li class="navbar-items">REGISTER</li>
-                    </a>
-                    <a href="profilePage.html" id="profileButton"> <img src="icons/woman.png" alt=""></a>
-                </ul>
+                <a href="index.html">
+                    <li class="navbar-items">HOME</li>
+                </a>
+                <a href="#" onclick="document.getElementById('cont').innerHTML=document.readyState" id="cont">
+                    <li class="navbar-items">CONTENT</li>
+                </a>
+                <a href="#">
+                    <li class="navbar-items">CONTACT</li>
+                </a>
+                <a href="signup.html">
+                    <li class="navbar-items">REGISTER</li>
+                </a>
+            </div>
+            <div class="profile-image">
+                <a href="profilePage.html" id="profileButton">
+                    <img src="icons/woman.png" alt="" /></a>
             </div>
         </div>
-
     </header>
-
 
     <div id="searchBar">
         <div class="category active">
@@ -52,160 +49,188 @@
             </a>
         </div>
 
-
-        <input type="text" placeholder="Search courses">
-        <input type="button" id="searchButton" value="Search">
+        <input type="text" placeholder="Search profiles..." />
+        <input type="button" id="searchButton" value="Search" />
     </div>
 
-    <!-- <div id="category">
-        <select name="category" id="category-dropdown">
-            <option value="">Profiles</option>
-            <option value=""><a href="courseList.html">Courses</a></option>
-        </select>
 
-    </div> -->
     <div id="resultCount">
-        <!-- <p>JAVA - 420 result found.</p> -->
+
         <div id="name-count">
             <p id="course-heading">JAVA</p>
             <p id="result-count">420 result found</p>
         </div>
 
         <div id="next-page">
-            <a href="#" style="text-decoration: none;"><p>1</p></a>
-            <a href="#" style="text-decoration: none;"><p>2</p></a>
-            <a href="#" style="text-decoration: none;"><p>3</p></a>
+            <a href="#" style="text-decoration: none">
+                <p>1</p>
+            </a>
+            <a href="#" style="text-decoration: none">
+                <p>2</p>
+            </a>
+            <a href="#" style="text-decoration: none">
+                <p>3</p>
+            </a>
         </div>
-        
+
         <!-- Javascript code to find the result count. -->
     </div>
-
 
     <div class="main-body">
 
         <div class="box box1">
-            <a class="resource-link" href="courseList.html">
-                <div id="name">
-                    <p>Tanisha Singh</p>
-                </div>
-            </a>
+            
+            <img src="illustration/1.png" alt="profileImage">
+        
+            <div id="name-name">
+                    <a class="resource-link" href="courseList.html">
+                        <p>Tanisha Singh</p>
+                    </a>
+            </div>
+
         </div>
 
-
         <div class="box box2">
-            <a class="resource-link" target="_blank" href="courseList.html">
-                <div id="name">
-                    <p>Ishita Kumari</p>
-                </div>
-            </a>
+            <img src="illustration/15.png" alt="profileImage">
+        
+            <div id="name-name">
+                    <a class="resource-link" href="courseList.html">
+                        <p>Yash Mahor</p>
+                    </a>
+            </div>
         </div>
 
         <div class="box box3">
-            <a class="resource-link" target="_blank" href="courseList.html">
-                <div id="name">
-                    <p>Yash Mahor</p>
-                </div>
-            </a>
+            <img src="illustration/2.png" alt="profileImage">
+        
+            <div id="name-name">
+                    <a class="resource-link" href="courseList.html">
+                        <p>Tingu Chuchi</p>
+                    </a>
+            </div>
         </div>
 
         <div class="box box4">
-            <a class="resource-link" target="_blank" href="courseList.html">
-                <div id="name">
-                    <p>Hemant Palliwal</p>
-                </div>
-            </a>
+            <img src="illustration/3.jpg" alt="profileImage">
+        
+            <div id="name-name">
+                    <a class="resource-link" href="courseList.html">
+                        <p>Deepanshu Bhardwaj</p>
+                    </a>
+            </div>
         </div>
 
         <div class="box box5">
-            <a class="resource-link" target="_blank" href="https://c.tenor.com/uwsw3oJt58oAAAAM/super-hot-sike.gif">
-                <div id="name">
-                    <p>Gaurav Kumar</p>
-                </div>
-            </a>
+            <img src="illustration/4.jpg" alt="profileImage">
+        
+            <div id="name-name">
+                    <a class="resource-link" href="courseList.html">
+                        <p>Praveen Bhatt</p>
+                    </a>
+            </div>
         </div>
 
         <div class="box box6">
-            <a class="resource-link" target="_blank" href="https://c.tenor.com/uwsw3oJt58oAAAAM/super-hot-sike.gif">
-                <div id="name">
-                    <p><i>NEETIKA SHAI</i></p>
-                </div>
-            </a>
+            <img src="illustration/5.jpg" alt="profileImage">
+        
+            <div id="name-name">
+                    <a class="resource-link" href="courseList.html">
+                        <p>JKunal Tanwar</p>
+                    </a>
+            </div>
         </div>
 
         <div class="box box7">
-            <a class="resource-link" target="_blank" href="https://c.tenor.com/uwsw3oJt58oAAAAM/super-hot-sike.gif">
-                <div id="name">
-                    <p>Varsha</p>
-                </div>
-            </a>
+            <img src="illustration/6.png" alt="profileImage">
+        
+            <div id="name-name">
+                    <a class="resource-link" href="courseList.html">
+                        <p>Gaurav Kumar</p>
+                    </a>
+            </div>
         </div>
 
         <div class="box box8">
-            <a class="resource-link" target="_blank" href="https://c.tenor.com/uwsw3oJt58oAAAAM/super-hot-sike.gif">
-                <div id="name">
-                    <p>Sanchit Kumar</p>
-                </div>
-            </a>
+            <img src="illustration/7.jpg" alt="profileImage">
+        
+            <div id="name-name">
+                    <a class="resource-link" href="courseList.html">
+                        <p>Lalita Bhatt</p>
+                    </a>
+            </div>
         </div>
 
         <div class="box box9">
-            <a class="resource-link" target="_blank" href="https://c.tenor.com/uwsw3oJt58oAAAAM/super-hot-sike.gif">
-                <div id="name">
-                    <p>Monu</p>
-                </div>
-            </a>
+            <img src="illustration/8.jpg" alt="profileImage">
+        
+            <div id="name-name">
+                    <a class="resource-link" href="courseList.html">
+                        <p>Varsha</p>
+                    </a>
+            </div>
         </div>
 
         <div class="box box10">
-            <a class="resource-link" target="_blank" href="https://c.tenor.com/uwsw3oJt58oAAAAM/super-hot-sike.gif">
-                <div id="name">
-                    <p>Deepanshu</p>
-                </div>
-            </a>
+            <img src="illustration/9.jpg" alt="profileImage">
+        
+            <div id="name-name">
+                    <a class="resource-link" href="courseList.html">
+                        <p>Ishita Kumari</p>
+                    </a>
+            </div>
         </div>
 
         <div class="box box11">
-            <a class="resource-link" target="_blank" href="https://c.tenor.com/uwsw3oJt58oAAAAM/super-hot-sike.gif">
-                <div id="name">
-                    <p>Aayush</p>
-                </div>
-            </a>
+            <img src="illustration/10.jpg" alt="profileImage">
+        
+            <div id="name-name">
+                    <a class="resource-link" href="courseList.html">
+                        <p>Gyan Dev</p>
+                    </a>
+            </div>
         </div>
 
         <div class="box box12">
-            <a class="resource-link" target="_blank" href="https://c.tenor.com/uwsw3oJt58oAAAAM/super-hot-sike.gif">
-                <div id="name">
-                    <p>Sanyam</p>
-                </div>
-            </a>
+            <img src="illustration/11.png" alt="profileImage">
+        
+            <div id="name-name">
+                    <a class="resource-link" href="courseList.html">
+                        <p>Ayush</p>
+                    </a>
+            </div>
         </div>
 
         <div class="box box13">
-            <a class="resource-link" target="_blank" href="https://c.tenor.com/uwsw3oJt58oAAAAM/super-hot-sike.gif">
-                <div id="name">
-                    <p>Praveen Bhatt</p>
-                </div>
-            </a>
+            <img src="illustration/12.png" alt="profileImage">
+        
+            <div id="name-name">
+                    <a class="resource-link" href="courseList.html">
+                        <p>Sanyam</p>
+                    </a>
+            </div>
         </div>
 
         <div class="box box14">
-            <a class="resource-link" target="_blank" href="https://c.tenor.com/uwsw3oJt58oAAAAM/super-hot-sike.gif">
-                <div id="name">
-                    <p>Lalita Bhatt</p>
-                </div>
-            </a>
+            <img src="illustration/13.png" alt="profileImage">
+        
+            <div id="name-name">
+                    <a class="resource-link" href="courseList.html">
+                        <p>Deepak Khitolia</p>
+                    </a>
+            </div>
         </div>
 
         <div class="box box15">
-            <a class="resource-link" target="_blank" href="https://c.tenor.com/uwsw3oJt58oAAAAM/super-hot-sike.gif">
-                <div id="name">
-                    <p>Siya Sharma</p>
-                </div>
-            </a>
+            <img src="illustration/14.png" alt="profileImage">
+        
+            <div id="name-name">
+                    <a class="resource-link" href="courseList.html">
+                        <p>Aman Thakur</p>
+                    </a>
+            </div>
         </div>
 
     </div>
-
 </body>
 
 </html>
