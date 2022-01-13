@@ -41,6 +41,14 @@ header .navbar {
   display: grid;
   grid-template-areas: ". nav logo";
 }
+@media (max-width: 1366px) {
+  .navbar  {
+    background-color: white;
+  }
+  .navbar :hover {
+    left: -100%;
+  }
+}
 
 .navbar-items2 {
   grid-area: nav;
