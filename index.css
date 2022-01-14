@@ -1,9 +1,12 @@
-* {
+*{
+  box-sizing: border-box;
+}
+#bodyID {
+  overflow-x: hidden;
   padding: 0;
   margin: 0;
-
-  overflow-x: hidden;
 }
+
 a {
   text-decoration: none;
   list-style: none;
@@ -56,7 +59,7 @@ a {
   min-width: none;
   width: 2rem;
 }
-.navbar .navbar-items2 ul {
+.navbar .navbar-items2  {
   box-sizing: border-box;
   display: flex;
   flex-flow: row nowrap;
@@ -73,7 +76,7 @@ a {
   font-size: 1.1rem;
   font-weight: 700;
 }
-.navbar .navbar-items2 ul a {
+.navbar .navbar-items2 a {
   box-sizing: border-box;
   padding: 1.1rem;
 
@@ -81,7 +84,7 @@ a {
 
   text-align: center;
 }
-.navbar .navbar-items2 ul a:hover {
+.navbar .navbar-items2 a:hover {
   background-color: white;
   color: black;
 }
@@ -126,15 +129,16 @@ a {
 }
 
 #searchBar {
+
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-content: flex-end;
 
-  height: 5rem;
+  height: 3.5rem;
   width: auto;
 
-  margin-right: 4rem;
+  margin: 1rem 2rem 0 0;
 }
 
 #searchBar input {
@@ -184,15 +188,15 @@ a {
   height: 16rem;
   min-height: 13.168rem;
 
-  margin: 0.2rem 0.8rem 3rem 0.8rem;
+  margin: 1rem 0.8rem 2rem 0.8rem;
 
   border-radius: 6%;
   border: 0.1rem solid black;
+
   background-color: black;
   background-size: 18.5rem 13.2rem;
   background-repeat: no-repeat;
 
-  z-index: 99;
 }
 
 /* Box animation on hover*/
@@ -201,7 +205,7 @@ a {
   transition: all 0.3s ease-in-out;
 }
 .box:hover {
-  transform: scale(1.08);
+  transform: scale(1.09);
   box-shadow: 7px 7px 7px rgb(0, 0, 0);
 }
 
@@ -256,9 +260,11 @@ div.box {
 }
 div.box #name {
   color: white;
+
   font-size: 1.35rem;
   font-weight: 550;
   font-family: monospace;
+
   position: absolute;
   top: 90%;
   left: 50%;
@@ -278,3 +284,11 @@ div.box #name {
 ::-webkit-scrollbar-thumb {
   background: #2a92ec;
 }
+
+
+/* @media screen and (max-width: 600px) {
+    #bodyID{
+        display: none;
+    }   
+} */
+

@@ -1,235 +1,268 @@
+body {
+  overflow-x: hidden;
+}
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+
+}
+a {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  font-family: "ubuntu";
+  font-size: normal;
+}
+#bodyID {
+
+  background-image: url(background/forest2.png);
+  background-size: cover;
+  background-attachment: fixed;
   
-    overflow-x: hidden;
-  }
-  a {
-    text-decoration: none;
-    list-style: none;
-    color: white;
-    font-family: "ubuntu";
-    font-size: normal;
-  }
-#bodyID{
-    overflow-x: hidden;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
 
-    background-image: url(background/forest2.png);
-    background-size: cover;
-    background-attachment: fixed;
-    margin: 0;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-content: center;
-
-    width: 100vw;
+  width: 100vw;
 }
 
-#main-body{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-content: center;
+#main-body {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
 
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
+
+  z-index: 1111;
 }
 
 /* NAVBAR START */
 
 .navbar {
-    display: flex;
-    flex-flow : row nowrap;
-    justify-content: space-between;
-  
-    position: relative;
-  
-    height: 3.5rem;
-  
-    width: 100vw;
-    min-width: 100%; 
-    padding: 0rem 2rem 0rem 0rem;
-  
-    background-color: black;
-  }
-  .navbar .extra{
-    /* position: absolute; */
-  
-    height: 100%;
-    min-width: none;
-    width: 2rem;
-  }
-  .navbar .navbar-items2 ul{
-    display: flex;
-    flex-flow : row nowrap;
-    justify-content: center;
-    align-content :center;
-  
-    /* position: absolute; */
-  
-    height: 100%;
-    min-width: 80%;
-  
-    width: 100%;
-  
-    font-size: 1.1rem;
-    font-weight: 700;
-  }
-  .navbar .navbar-items2 ul a{
-    padding: 1.1rem;
-  
-    width: 8rem;
-  
-    text-align: center;
-  }
-  .navbar .navbar-items2 ul a:hover{
+  box-sizing: border-box;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+
+  position: relative;
+
+  height: 3.5rem;
+
+  width: 100vw;
+  min-width: 100%;
+  padding: 0rem 2rem 0rem 0rem;
+
+  background-color: black;
+}
+.navbar .extra {
+  box-sizing: border-box;
+
+  height: 100%;
+  min-width: none;
+  width: 2rem;
+}
+.navbar .navbar-items2 ul {
+  box-sizing: border-box;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-content: center;
+
+  /* position: absolute; */
+
+  height: 100%;
+  min-width: 80%;
+
+  width: 100%;
+
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.navbar .navbar-items2 ul a {
+  box-sizing: border-box;
+
+  padding: 1.1rem;
+
+  width: 8rem;
+
+  text-align: center;
+}
+.navbar .navbar-items2 ul a:hover {
+  box-sizing: border-box;
+
+  background-color: white;
+  color: black;
+}
+.navbar .pp {
+  box-sizing: border-box;
+
+  position: relative;
+  height: 95%;
+  width: 3.5rem;
+
+  padding: 0.3rem;
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  /* background-color: white; */
+}
+.navbar .pppp {
+  box-sizing: border-box;
+
+  height: 100%;
+  width: 100%;
+}
+.navbar .pp img {
+  box-sizing: border-box;
+
+  position: absolute;
+  height: 90%;
+  width: 3.1rem;
+
+  background-color: black;
+
+  border-radius: 50%;
+
+  transition: all 0.5s ease-in-out;
+}
+.navbar .pp img:hover {
+  background-color: white;
+}
+
+@media (max-width: 10rem) {
+  .navbar {
     background-color: white;
-    color: black;
   }
-  .navbar .pp {
-    position: relative; 
-    height: 95%; 
-    width : 3.5rem;
-  
-    padding: 0.3rem;
-  
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    /* background-color: white; */
-  }
-  .navbar .pppp{
-    height: 100%; 
-    width : 100%;
-  }
-  .navbar .pp img{
-    position: absolute;
-    height: 90%; 
-    width : 3.1rem;
-  
-    background-color: black;
-    
-    border-radius: 50%;
-  
-    transition: all 0.5s ease-in-out;
-  }
-  .navbar .pp img:hover{
-    background-color: white;
-  
-  }
-  
-  @media (max-width:10rem){
-    .navbar  {
-      background-color: white;
-    }
-  }
-  
-  
-  
+}
 
 /* Name heading */
 
-main .nameHeading{
+main .nameHeading {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  width: 50vw;
+  height: 5rem;
+  background-color: white;
+  /* background-image : url(background/comb.jpg); */
 
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-content: center;
-    width: 50vw;
-    height: 5rem;
-    background-color: white;
-    /* background-image : url(background/comb.jpg); */
+  /* background-size:contain; */
 
-    /* background-size:contain; */
+  margin: 0.5rem;
+  color: black;
+  border-radius: 2rem;
+  box-shadow: 0.7rem 0.5rem 1rem rgb(0, 0, 0);
+  transition: all 0.2s ease-in;
+}
+main .nameHeading h1 {
+  background-color: rgba(221, 228, 245, 0.1);
 
-    margin: 0.5rem;
-    color:black;
-    border-radius: 2rem;
-    box-shadow: 0.7rem 0.5rem 1rem   rgb(0, 0, 0);
-    transition: all 0.2s ease-in;
+  color: black;
+  border-radius: 1rem;
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Proza Libre", sans-serif;
 }
-main .nameHeading h1{
-    background-color: rgba(221, 228, 245, 0.1);
-
-    color:black;
-    border-radius: 1rem;
-    text-align: center;
-    font-size: 3rem;
-    font-family: 'Proza Libre', sans-serif;;
+main .nameHeading a {
+  height: auto;
+  width: auto;
+  text-decoration: none;
 }
-main .nameHeading a{
-    height: auto;
-    width: auto;
-    text-decoration: none;
+main .nameHeading:hover {
+  animation: shake 3s ease-in-out;
+  animation-delay: 0.2s;
 }
-main .nameHeading:hover{
-    animation: shake 3s ease-in-out;
-    animation-delay: 0.2s;
-}
-  @keyframes shake {
-    5% { transform: translateX(10px) ; }
-    10% { transform: scale(1.2) ;}
-    20% { transform: translateX(10px) ; }
-    30% { transform: translateX(-1.2) ; }
-    40% { transform: scale(10px) ; }
-    50% { transform: translateX(-10px) ; }
-    60% { transform: scale(-5) ; }
-    70% { transform: translateX(-10px) ; }
-    80% { transform: scale(1.7) ; }
-    90% { transform: translateX(-10px) ; }
-    100% { transform: scale(50); }
+@keyframes shake {
+  5% {
+    transform: translateX(10px);
   }
+  10% {
+    transform: scale(1.2);
+  }
+  20% {
+    transform: translateX(10px);
+  }
+  30% {
+    transform: translateX(-1.2);
+  }
+  40% {
+    transform: scale(10px);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  60% {
+    transform: scale(-5);
+  }
+  70% {
+    transform: translateX(-10px);
+  }
+  80% {
+    transform: scale(1.7);
+  }
+  90% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: scale(50);
+  }
+}
 
 main .profileData {
-    width: 80rem;
-    height: 100vh;
-    /* background-image: url(background/lightblue3.png); */
-    background-size: cover;
-    background-repeat: no-repeat;
-    /* opacity: 0.7; */
-    border-radius: 2rem;
+  width: 80rem;
+  height: 100vh;
+  /* background-image: url(background/lightblue3.png); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* opacity: 0.7; */
+  border-radius: 2rem;
 
-    display: flex;
-    flex-flow: column wrap;
-    align-content: center;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
 }
 
-main .profileData #profileDataButton ul{
+main .profileData #profileDataButton ul {
+  width: 100%;
+  height: 5rem;
 
-    width: 100%;
-    height: 5rem;
-
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-content: space-between;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: space-between;
 }
-#profileDataButton ul .button{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-content: center;
+#profileDataButton ul .button {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
 
-    background-color : white;
-    color: black;
+  background-color: white;
+  color: black;
 
-    box-shadow: 0.4rem 0.4rem  0.5rem black;
+  box-shadow: 0.4rem 0.4rem 0.5rem black;
 
-    height: 3.5rem;
-    width: 12rem;
-    border-radius: 2rem;
+  height: 3.5rem;
+  width: 12rem;
+  border-radius: 2rem;
 
-    text-align: center;
-    font-family: 'Rubik', sans-serif;
-    font-size: 2rem;
-    font-weight:550;
-    transition: all 0.2s ease-in-out;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  font-size: 2rem;
+  font-weight: 550;
+  transition: all 0.2s ease-in-out;
 }
-#profileDataButton ul a{
-    text-decoration: none;
+#profileDataButton ul a {
+  text-decoration: none;
 }
-#profileDataButton ul .button:hover{
-    transform: translateY(0.2rem);
+#profileDataButton ul .button:hover {
+  transform: translateY(0.2rem);
 }
