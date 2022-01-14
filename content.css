@@ -5,7 +5,13 @@
 
   overflow-x: hidden;
 }
-
+a {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  font-family: "ubuntu";
+  font-size: normal;
+}
 #bodyID {
   background-image: url(background/black2.jpg);
 
@@ -18,6 +24,7 @@
   align-content: center;
 
   width: 100vw;
+  min-width: 100vw;
   height: auto;
 }
 
@@ -31,85 +38,97 @@
   align-items: center;
 }
 
-header .navbar {
+
+/* NAVBAR  */
+
+.navbar {
+  display: flex;
+  flex-flow : row nowrap;
+  justify-content: space-between;
+
+  position: relative;
+
+  height: 3.5rem;
+
   width: 100vw;
-  height: 3.15rem;
-  background-color: rgba(0, 0, 0, 1);
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
-  z-index: 2;
-  display: grid;
-  grid-template-areas: ". nav logo";
+  min-width: 100%; 
+  padding: 0rem 2rem 0rem 0rem;
+
+  background-color: black;
 }
-@media (max-width: 1366px) {
+.navbar .extra{
+  /* position: absolute; */
+
+  height: 100%;
+  min-width: none;
+  width: 2rem;
+}
+.navbar .navbar-items2 ul{
+  display: flex;
+  flex-flow : row nowrap;
+  justify-content: center;
+  align-content :center;
+
+  /* position: absolute; */
+
+  height: 100%;
+  min-width: 80%;
+
+  width: 100%;
+
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.navbar .navbar-items2 ul a{
+  padding: 1.1rem;
+
+  width: 8rem;
+
+  text-align: center;
+}
+.navbar .navbar-items2 ul a:hover{
+  background-color: white;
+  color: black;
+}
+.navbar .pp {
+  position: relative; 
+  height: 95%; 
+  width : 3.5rem;
+
+  padding: 0.3rem;
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  /* background-color: white; */
+}
+.navbar .pppp{
+  height: 100%; 
+  width : 100%;
+}
+.navbar .pp img{
+  position: absolute;
+  height: 90%; 
+  width : 3.1rem;
+
+  background-color: black;
+  
+  border-radius: 50%;
+
+  transition: all 0.5s ease-in-out;
+}
+.navbar .pp img:hover{
+  background-color: white;
+
+}
+
+@media (max-width:10rem){
   .navbar  {
     background-color: white;
   }
-  .navbar :hover {
-    left: -100%;
-  }
 }
 
-.navbar-items2 {
-  grid-area: nav;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-.navbar-items2 a {
-  font-size: 1.2rem;
-  text-decoration: none;
-  font-family: "ubuntu";
-  font-style: normal;
 
-  color: white;
-  background-color: black;
-  font-weight: 650;
-
-    display:grid;
-    place-items: center;
-
-}
-
-.navbar a:hover {
-  background-color: white;
-  color: black;
-}
-.navbar ul {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: center;
-}
-
-.navbar li {
-  display: inline;
-  list-style: none;
-}
-
-.profile-image {
-  grid-area: logo;
-  display: flex;
-  justify-content: right;
-}
-.navbar #profileButton {
-
-  height: 100%;
-  width: 2rem;
-
-  background-color: black;
-  color: black;
-  border-radius: 50%;
-  transition: all 0.5s ease-in-out;
-
-  
-}
-.navbar #profileButton img {
-  height: 100%;
-  padding: 0;
-}
-.navbar #profileButton:hover {
-  background-color: white;
-}
 
 /*  SEARCH BAR */
 
@@ -229,8 +248,8 @@ header .navbar {
 .box {
   display: flex;
   flex-flow: column wrap;
-  justify-content:safe;
-  align-content: safe;
+  /* justify-content: stretch;
+  align-content: space-around; */
   
   width: 15rem;
   height: 12rem;
@@ -244,12 +263,12 @@ header .navbar {
 }
 .box:hover {
   transform: scale(1.09);
-  z-index: 5;
 }
 
 .box img{
     width: 100%;
     height: 80%;
+    border-radius: 1rem 1rem 0 0;
 }
 
 .box #name-name a{
@@ -263,6 +282,9 @@ header .navbar {
 
     padding: 1.8%;    
     text-align: center;
+
+    border-radius: 0 0 1rem 1rem;
+
 }
 
 div.box {
