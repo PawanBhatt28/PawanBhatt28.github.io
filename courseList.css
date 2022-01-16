@@ -39,7 +39,7 @@ body {
     flex-flow : row nowrap;
     justify-content: space-between;
   
-    position: relative;
+    position: fixed ;
   
     height: 3.5rem;
   
@@ -48,6 +48,8 @@ body {
     padding: 0rem 2rem 0rem 0rem;
   
     background-color: black;
+
+    z-index: 10;
   }
   .navbar .extra{
     /* position: absolute; */
@@ -143,6 +145,8 @@ body {
     background-color: transparent;
     height: 5rem;
     width: 100vw;
+
+    margin: 4rem 0 0 0;
 }
 
 #searchBar input{
@@ -158,6 +162,8 @@ body {
     border-top-left-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
     outline: none;
+
+    
 
 }
 

@@ -46,7 +46,7 @@ a {
   flex-flow : row nowrap;
   justify-content: space-between;
 
-  position: relative;
+  position: fixed;
 
   height: 3.5rem;
 
@@ -55,6 +55,8 @@ a {
   padding: 0rem 2rem 0rem 0rem;
 
   background-color: black;
+
+  z-index: 10;
 }
 .navbar .extra{
   /* position: absolute; */
@@ -143,7 +145,7 @@ a {
   height: max-content;
   width: 100vw;
 
-  margin: 0.8rem 0 0.8rem 0;
+  margin: 4rem 0 0.8rem 0;
 }
 
 #searchBar input {
