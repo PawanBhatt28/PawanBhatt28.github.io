@@ -155,7 +155,10 @@ backdrop-filter: blur(10px);
 .main-body .profile-section .profile-picture img{
   height: 100%;
   width: 100%;
+
   border-radius: 50%;
+
+  box-shadow: 5px 5px 10px black;
 }
 .profile-details {
     display: flex;
