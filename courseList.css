@@ -2,9 +2,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* overflow-x: hidden; */
-  }
-  a {
+    overflow-x: hidden;
+
+
+}
+
+a{
     text-decoration: none;
     list-style: none;
     color: white;
@@ -20,7 +23,9 @@ body {
     height: auto;
     overflow-x: hidden;
 
-    background-image: url(./background/black2.jpg);
+    /* background-image: url(./background/lightblue4.jpg); */
+  background-image: url(background/blue3.jpg);
+
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -124,13 +129,6 @@ body {
   
   }
   
-  @media (max-width:10rem){
-    .navbar  {
-      background-color: white;
-    }
-  }
-  
-
 #main-body {
     display: flex;
     flex-flow: column wrap;
@@ -242,7 +240,6 @@ body {
 }
 
 #next-page{
-    box-sizing:unset;   
 
 
     display: flex;
@@ -270,9 +267,7 @@ body {
 }
 
 #next-page p:hover{
-    border: 0.1rem solid black;
-    background-color: rgb(252, 130, 108);
-    color:  white;
+    background-color: rgb(241, 241, 241);
 }
 #courseSection #filter-section{
     /* display: flex;

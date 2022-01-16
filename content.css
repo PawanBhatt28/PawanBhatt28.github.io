@@ -13,7 +13,7 @@ a {
   font-size: normal;
 }
 #bodyID {
-  background-image: url(background/black2.jpg);
+  background-image: url(background/blue3.jpg);
 
   background-attachment: fixed;
   background-size: cover;
@@ -134,13 +134,16 @@ a {
 
 #searchBar {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: center;
   align-content: center;
 
   position: relative;
-  height: 5rem;
+
+  height: max-content;
   width: 100vw;
+
+  margin: 0.8rem 0 0.8rem 0;
 }
 
 #searchBar input {
@@ -161,15 +164,20 @@ a {
 #searchBar #searchButton {
   height: 3rem;
   width: 8vw;
+
   border: 0.1rem solid black;
+
   font-weight: 500;
   color: white;
+
   background-color: rgb(0, 0, 0);
-  margin: 0;
+
   border-top-right-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+
+  padding:0;
 }
 
 /* Category Dropdown */
@@ -222,28 +230,36 @@ a {
   font-size: 0.8rem;
 }
 
-#next-page {
+#next-page{
+
+
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-content: center;
 }
-#next-page p {
-  height: 2.5rem;
-  width: 2.5rem;
+#next-page p{
+  box-sizing:content-box;   
+
+  display: flex;
+  flex-flow: column nowrap;  
+  align-content: center;
+  justify-content: center;
   text-align: center;
 
+  height: 2.5rem;
+  width: 2.5rem;
+
   margin: 0.5rem;
-  padding: 0.4rem;
+
 
   background-color: white;
-  color: black;
+  color:black;
 }
 
-#next-page p:hover {
-  border: 0.1rem solid black;
+#next-page p:hover{
+  background-color: rgb(241, 241, 241);
 }
-
 /* COURSE BOX */
 .box {
   display: flex;
@@ -311,3 +327,42 @@ div.box {
 }
 
 
+/* Navbar responsive */
+@media screen and (max-width: 600px) {
+  .navbar {
+    padding-right: 0.5rem;
+  }
+  /* .navbar .navbar-items2 {
+    display: none;
+  } */
+  .navbar .navbar-items2 .navbar-items{
+    font-size: 0.9rem;
+    /* padding: 0.5rem; */
+  }
+
+}
+  
+
+
+/* Search Bar responsive */
+
+@media screen and (max-width: 800px ) {
+  .main-body{
+    margin : 0.8rem 0 0 0;
+  }
+
+  #searchBar{
+    padding: 0 0.5rem 0 0.5rem;
+  }
+  #searchBar input{
+    width: 49vw;
+  }
+  #searchBar #searchButton{
+    width: 15vw;
+    font-size: smaller;
+  }
+  #searchBar .category{
+    width: 16vw;
+    font-size: small;
+  }
+}

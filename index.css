@@ -42,6 +42,7 @@ a {
   flex-flow: row nowrap;
   justify-content: space-between;
 
+  flex: 1 1 1 10rem ;
   position: relative;
 
   height: 3.5rem;
@@ -52,6 +53,7 @@ a {
 
   background-color: black;
 }
+
 .navbar .extra {
   /* position: absolute; */
   box-sizing: border-box;
@@ -122,11 +124,6 @@ a {
   background-color: white;
 }
 
-@media (max-width: 10rem) {
-  .navbar {
-    background-color: white;
-  }
-}
 
 #searchBar {
 
@@ -136,7 +133,6 @@ a {
   align-content: flex-end;
 
   height: 3.5rem;
-  width: auto;
 
   margin: 1rem 2rem 0 0;
 }
@@ -183,7 +179,7 @@ a {
 
 .box {
 
-  width: 18.226rem;
+  width: 18.226rem; 
   min-width: 15rem;
   height: 16rem;
   min-height: 13.168rem;
@@ -286,9 +282,25 @@ div.box #name {
 }
 
 
-/* @media screen and (max-width: 600px) {
-    #bodyID{
-        display: none;
-    }   
-} */
+@media screen and (max-width: 600px){
+  #searchBar{
+    margin-right: 0;
+    align-content: center;
+  }
+  #searchBar input{
+    width: 60vw;
+  }
+  #searchBar #searchButton{
+    width: 28vw;
 
+  }
+}
+
+@media screen and (max-width: 400px) {
+.navbar {
+  padding-right: 0.5rem;
+}
+.navbar .navbar-items2 {
+  display: none;
+}
+}

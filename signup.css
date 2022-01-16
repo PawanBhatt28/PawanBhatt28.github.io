@@ -1,10 +1,12 @@
-* {
+*{
+  box-sizing: border-box;
+}
+#bodyID {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
-  
     overflow-x: hidden;
   }
+
 a {
     text-decoration: none;
     list-style: none;
@@ -59,7 +61,7 @@ a {
     min-width: none;
     width: 2rem;
   }
-  .navbar .navbar-items2 ul{
+  .navbar .navbar-items2 {
     display: flex;
     flex-flow : row nowrap;
     justify-content: center;
@@ -75,14 +77,14 @@ a {
     font-size: 1.1rem;
     font-weight: 700;
   }
-  .navbar .navbar-items2 ul a{
+  .navbar .navbar-items2 a{
     padding: 1.1rem;
   
     width: 8rem;
   
     text-align: center;
   }
-  .navbar .navbar-items2 ul a:hover{
+  .navbar .navbar-items2 a:hover{
     background-color: white;
     color: black;
   }

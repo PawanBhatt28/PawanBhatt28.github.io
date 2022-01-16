@@ -1,11 +1,12 @@
-body {
-  overflow-x: hidden;
-}
-* {
-  padding: 0;
+*{
+  box-sizing: border-box;
   margin: 0;
 
-
+}
+#bodyID {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
 }
 a {
   text-decoration: none;
@@ -66,7 +67,7 @@ a {
   min-width: none;
   width: 2rem;
 }
-.navbar .navbar-items2 ul {
+.navbar .navbar-items2 {
   box-sizing: border-box;
 
   display: flex;
@@ -84,7 +85,7 @@ a {
   font-size: 1.1rem;
   font-weight: 700;
 }
-.navbar .navbar-items2 ul a {
+.navbar .navbar-items2 a {
   box-sizing: border-box;
 
   padding: 1.1rem;
@@ -93,7 +94,7 @@ a {
 
   text-align: center;
 }
-.navbar .navbar-items2 ul a:hover {
+.navbar .navbar-items2 a:hover {
   box-sizing: border-box;
 
   background-color: white;
@@ -136,11 +137,6 @@ a {
   background-color: white;
 }
 
-@media (max-width: 10rem) {
-  .navbar {
-    background-color: white;
-  }
-}
 
 /* Name heading */
 
@@ -149,16 +145,16 @@ main .nameHeading {
   flex-flow: row wrap;
   justify-content: center;
   align-content: center;
+
   width: 50vw;
   height: 5rem;
+  
   background-color: white;
-  /* background-image : url(background/comb.jpg); */
-
-  /* background-size:contain; */
+  color: black;
 
   margin: 0.5rem;
-  color: black;
-  border-radius: 2rem;
+  
+  border-radius: 1.5rem;
   box-shadow: 0.7rem 0.5rem 1rem rgb(0, 0, 0);
   transition: all 0.2s ease-in;
 }
@@ -175,45 +171,6 @@ main .nameHeading a {
   height: auto;
   width: auto;
   text-decoration: none;
-}
-main .nameHeading:hover {
-  animation: shake 3s ease-in-out;
-  animation-delay: 0.2s;
-}
-@keyframes shake {
-  5% {
-    transform: translateX(10px);
-  }
-  10% {
-    transform: scale(1.2);
-  }
-  20% {
-    transform: translateX(10px);
-  }
-  30% {
-    transform: translateX(-1.2);
-  }
-  40% {
-    transform: scale(10px);
-  }
-  50% {
-    transform: translateX(-10px);
-  }
-  60% {
-    transform: scale(-5);
-  }
-  70% {
-    transform: translateX(-10px);
-  }
-  80% {
-    transform: scale(1.7);
-  }
-  90% {
-    transform: translateX(-10px);
-  }
-  100% {
-    transform: scale(50);
-  }
 }
 
 main .profileData {
@@ -262,7 +219,9 @@ main .profileData #profileDataButton ul {
 }
 #profileDataButton ul a {
   text-decoration: none;
+
+  margin:0 0.5rem 0 0.5rem;
 }
 #profileDataButton ul .button:hover {
-  transform: translateY(0.2rem);
+  transform: translateY(-0.2rem);
 }
