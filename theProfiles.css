@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;    
 }
 #bodyID {
   background-image: url("background/black3.jpg");
@@ -150,7 +152,11 @@ backdrop-filter: blur(10px);
   border-radius: 50%;
   border: 0.05rem solid black;
 }
-
+.main-body .profile-section .profile-picture img{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
 .profile-details {
     display: flex;
     justify-content: center;
@@ -165,7 +171,7 @@ backdrop-filter: blur(10px);
     border-radius: 1rem;
 
     font-family: poppins;
-    font-size: 2.5rem;
+    font-size: 1.9rem;
     color: white;
     
 }
@@ -178,20 +184,51 @@ backdrop-filter: blur(10px);
   backdrop-filter: blur(20px);
   background-color: rgba(0,0,0,0.5);
 
-  width: 68rem;
+  width: 60rem;
   height: 38rem;
 
 
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  /* align-content: center; */
+  align-content: center;
 }
 
 .main-body .profile-course-section .profile-course-nav {
   width: 100%;
-  height: 4rem;
+  height: 5rem;
   background-color: black;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+}
+.main-body .profile-course-section .nav-button{
+    width: 13rem;
+    height: 3.7rem;
+
+    margin: 0.5rem;
+
+    /* background-color: rgba(188, 241, 243, 0.2); */
+
+
+    border-radius: 1rem;
+
+    color:white;
+    font-family: poppins;
+    font-size : 1.8rem;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+
+    transition: all 0.1s ease-out;
+}
+.main-body .profile-course-section .nav-button:hover{
+    background-color: rgba(188, 241, 243, 0.2);
+
 }
 .main-body .profile-course-result {
 
@@ -219,6 +256,11 @@ backdrop-filter: blur(10px);
   text-align: center;
 
   margin: 1rem;
+  border-radius: 1.5rem;
 
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
   /* border-radius: 1.5rem; */
 }
