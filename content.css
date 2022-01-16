@@ -329,21 +329,35 @@ div.box {
 
 /* Navbar responsive */
 @media screen and (max-width: 600px) {
+
   .navbar {
-    padding-right: 0.5rem;
+    padding-right: 0;
+    justify-content: center;
   }
-  /* .navbar .navbar-items2 {
+  .navbar .extra {
     display: none;
-  } */
-  .navbar .navbar-items2 .navbar-items{
-    font-size: 0.9rem;
-    /* padding: 0.5rem; */
   }
+  .navbar .navbar-items2 .navbar-items{
+    width: min-content;
+    font-size: 0.7rem;
+    margin: 0;
+  }
+  .navbar .navbar-items2 .nav-link{
+    width: 5rem;
+
+    padding-left: 0.5rem;
+    padding-right: 0; 
+  }
+
+  .navbar .pp{
+    padding: 0;
+    height: 100%;
+    width: 2.7rem;
+  }
+
 
 }
   
-
-
 /* Search Bar responsive */
 
 @media screen and (max-width: 800px ) {
@@ -356,6 +370,8 @@ div.box {
   }
   #searchBar input{
     width: 49vw;
+    font-size: small;
+    padding-left: 0.7rem;
   }
   #searchBar #searchButton{
     width: 15vw;
