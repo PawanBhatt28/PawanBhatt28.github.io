@@ -289,7 +289,7 @@ a {
     border-radius: 1rem 1rem 0 0;
 }
 
-.box #name-name a{
+.box #name a{
     text-decoration: none;
     color: white;
 
@@ -308,7 +308,9 @@ a {
 div.box {
   position: relative;
 }
-
+.hideIt{
+  display: none;
+}
 
 .resource-link {
   position: absolute;

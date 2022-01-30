@@ -12,6 +12,7 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
     </style>
+    <script src="search.js" defer></script>
   </head>
 
   <body id="bodyID">
@@ -58,7 +59,7 @@
         </a>
       </div>
 
-      <input type="text" placeholder="Search profiles..." />
+      <input type="text" placeholder="Search profiles..." id="search" oninput="searchResult()"/>
       <input type="button" id="searchButton" value="Search" />
     </div>
 
@@ -86,7 +87,7 @@
       <div class="box box1">
         <img src="illustration/1.png" alt="profileImage" />
 
-        <div id="name-name">
+        <div id="name">
           <a class="resource-link" href="./Profiles/tanisha_singh/theProfiles.html">
             <p>Tanisha Singh</p>
           </a>
@@ -96,7 +97,7 @@
       <div class="box box2">
         <img src="illustration/15.png" alt="profileImage" />
 
-        <div id="name-name">
+        <div id="name">
           <a class="resource-link" href="./Profiles/yash_mahor/theProfiles.html">
             <p>Yash Mahor</p>
           </a>
@@ -106,7 +107,7 @@
       <div class="box box3">
         <img src="illustration/2.png" alt="profileImage" />
 
-        <div id="name-name">
+        <div id="name">
           <a class="resource-link" href="courseList.html">
             <p>Tingu Chuchi</p>
           </a>
@@ -116,7 +117,7 @@
       <div class="box box4">
         <img src="illustration/3.jpg" alt="profileImage" />
 
-        <div id="name-name">
+        <div id="name">
           <a class="resource-link" href="./Profiles/deepanshu/theProfiles.html">
             <p>Deepanshu Bhardwaj</p>
           </a>
@@ -126,7 +127,7 @@
       <div class="box box5">
         <img src="illustration/4.jpg" alt="profileImage" />
 
-        <div id="name-name">
+        <div id="name">
           <a class="resource-link" href="courseList.html">
             <p>Praveen Bhatt</p>
           </a>
@@ -136,7 +137,7 @@
       <div class="box box6">
         <img src="illustration/5.jpg" alt="profileImage" />
 
-        <div id="name-name">
+        <div id="name">
           <a class="resource-link" href="courseList.html">
             <p><i>NEETIKA SHAI</i></p>
           </a>
@@ -146,7 +147,7 @@
       <div class="box box7">
         <img src="illustration/6.png" alt="profileImage" />
 
-        <div id="name-name">
+        <div id="name">
           <a class="resource-link" href="courseList.html">
             <p>Gaurav Kumar</p>
           </a>
@@ -156,7 +157,7 @@
       <div class="box box8">
         <img src="illustration/7.jpg" alt="profileImage" />
 
-        <div id="name-name">
+        <div id="name">
           <a class="resource-link" href="courseList.html">
             <p>Lalita Bhatt</p>
           </a>
@@ -166,7 +167,7 @@
       <div class="box box9">
         <img src="illustration/8.jpg" alt="profileImage" />
 
-        <div id="name-name">
+        <div id="name">
           <a class="resource-link" href="courseList.html">
             <p>Varsha</p>
           </a>
@@ -176,7 +177,7 @@
       <div class="box box10">
         <img src="illustration/9.jpg" alt="profileImage" />
 
-        <div id="name-name">
+        <div id="name">
           <a class="resource-link" href="courseList.html">
             <p>Ishita Kumari</p>
           </a>
@@ -186,7 +187,7 @@
       <div class="box box11">
         <img src="illustration/10.jpg" alt="profileImage" />
 
-        <div id="name-name">
+        <div id="name">
           <a class="resource-link" href="courseList.html">
             <p>Gyan Dev</p>
           </a>
@@ -196,7 +197,7 @@
       <div class="box box12">
         <img src="illustration/11.png" alt="profileImage" />
 
-        <div id="name-name">
+        <div id="name">
           <a class="resource-link" href="courseList.html">
             <p>Ayush</p>
           </a>
@@ -206,7 +207,7 @@
       <div class="box box13">
         <img src="illustration/12.png" alt="profileImage" />
 
-        <div id="name-name">
+        <div id="name">
           <a class="resource-link" href="courseList.html">
             <p>Sanyam</p>
           </a>
@@ -216,7 +217,7 @@
       <div class="box box14">
         <img src="illustration/13.png" alt="profileImage" />
 
-        <div id="name-name">
+        <div id="name">
           <a class="resource-link" href="courseList.html">
             <p>Deepak Khitolia</p>
           </a>
@@ -226,7 +227,7 @@
       <div class="box box15">
         <img src="illustration/14.png" alt="profileImage" />
 
-        <div id="name-name">
+        <div id="name">
           <a class="resource-link" href="courseList.html">
             <p>Aman Thakur</p>
           </a>
