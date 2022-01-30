@@ -2,7 +2,7 @@
 
 function searchResult(){
 
-    const search = document.querySelector('#search').value;
+    const search = document.querySelector('#search').value.toLowerCase();
     const allboxes = document.querySelector('.main-body').children;
 
     console.log(search);
