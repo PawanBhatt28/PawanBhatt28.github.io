@@ -32,6 +32,10 @@ body {
 
 }
 
+.dark-body{
+    background: black;
+}
+
 .navbar {
     box-sizing: border-box;
 
@@ -285,18 +289,21 @@ body {
     width: 15rem;
 
     /* background-color: rgb(217, 234, 250); */
-    background-color: white;
+
     border-radius: 0.5rem;
 
     line-height: 1.5rem;
 
-    color: black;
     position: relative;
     /* top: 5rem; */
     padding: 1rem 0rem 1rem 2rem;
     margin: 0 0 2rem 0;
     font-family:'Source Sans Pro', sans-serif;
 
+}
+ .filter{
+    background-color : white;
+    color: black;
 }
 #filter-section ul{
     /* display: flex;
@@ -329,7 +336,7 @@ body {
 }
 
 
-#courseResult .result{
+.result{
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -349,7 +356,10 @@ body {
     font-weight: 600;
     transition: all 0.1s ease-in-out;
 }
-
+.dark-card{
+    background-color: rgb(38, 38, 63);
+    color: white;
+}
 #courseResult .result:hover{
     box-shadow: 2px 2px 3px grey;
     transform: scale(1.001);

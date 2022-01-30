@@ -17,3 +17,14 @@ function submitfunc2(id){
     id.style.backgroundColor = "white";
     id.style.color = "black";
 }
+
+
+function confirm(){
+    const password = document.querySelector('#password');
+    const repassword = document.querySelector('#repassword');
+    if(password != repassword){
+        alert('Passwords are not same.')
+    }else{
+        
+    }  
+}

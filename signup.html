@@ -60,12 +60,12 @@
                     <table class="table1">
                         <tr>
                             <td><label for="name">Full Name</label></td>
-                            <td><input type="text" required id="name"></td>
+                            <td><input type="text" required id="name" required></td>
                         </tr>
 
                         <tr>
                             <td><label for="username">Username</label></td>
-                            <td><input type="text" required id="username"></td>
+                            <td><input type="text" required id="username" required></td>
                         </tr>
 
                         <tr>
@@ -92,7 +92,7 @@
 
                         <tr>
                             <td><label>Date Of Birth</label></td>
-                            <td><input type="date"></td>
+                            <td><input type="date" required></td>
                         </tr>
 
                         <tr>
@@ -107,22 +107,22 @@
                     <table id="table2">
                         <tr>
                             <td><label for="email">Email</label></td>
-                            <td><input type="email" required id="email"></td>
+                            <td><input type="email" required id="email" required></td>
                         </tr>
 
                         <tr>
                             <td><label for="password">Password</label></td>
-                            <td><input type="password" required id="password"></td>
+                            <td><input type="password" required id="password" required></td>
                         </tr>
 
                         <tr>
                             <td><label for="repassword">Confirm Password</label></td>
-                            <td><input type="password" required id="repassword"></td>
+                            <td><input type="password" required id="repassword" required></td>
                         </tr>
                     </table>
                     <br>
-                    <input type="submit" value="SUBMIT" id="submit" onmousedown="submitfunc(this)"
-                        onmouseup="submitfunc2(this)">
+                    <a href="index.html"><input type="submit" value="SUBMIT" id="submit" onmousedown="submitfunc(this)"
+                        onmouseup="submitfunc2(this)" onclick="confirm()"> </a>
                 </form>
             </div>
         </div>

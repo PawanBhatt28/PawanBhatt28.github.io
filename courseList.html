@@ -11,6 +11,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
     </style>
+    <script src="script3.js" defer></script>
 </head>
 
 
@@ -28,7 +29,7 @@
                 <li class="navbar-items">HOME</li>
               </a>
               <a href="#" class="nav-link">
-                <li class="navbar-items">CONTENT</li>
+                <li class="navbar-items" onclick="dark()">Dark/Light</li>
               </a>
               <a href="#" class="nav-link">
                 <li class="navbar-items">CONTACT</li>
@@ -87,12 +88,12 @@
 
         <div id="courseSection">
 
-            <aside id="filter-section">
+            <aside id="filter-section" class='filter'>
                 <h3>Filter</h3>
                 <ul>
                     <li><h4>Sort</h4></li>
                     <li><ul>
-                        <li><input type="radio" id="rating-filter" name="sort"><label for="rating-filter">Rating</label></li>
+                        <li><input type="radio" id="rating-filter" name="sort"><label for="rating-filter" onclick="sorted()">Rating</label></li>
                         <li><input type="radio" id="hours-watched" name="sort"><label for="hours-watched">Hours Watched</label></li>
                         <li><input type="radio" id="level" name="sort"><label for="level">Difficulty</label></li>
                     </ul></li>
@@ -102,7 +103,7 @@
             <div id="courseResult">
 
                 <div class="result ">
-                    <a href="https://www.youtube.com/watch?v=UmnCZ7-9yDY" target="_blank"><p>Java for beginners</p></a>
+                    <p>Java for beginners</p>
                     <div class="tags">
                         <p>interview</p>
                         <p>cp</p>
@@ -116,7 +117,7 @@
 
                 <div class="result ">
                     
-                    <a href="https://www.youtube.com/playlist?list=PLfqMhTWNBTe3LtFWcvwpqTkUSlB32kJop" target="_blank"><p>Java + DSA</p> </a>
+                    <p>Java + DSA</p>
                     <div class="tags">
                         <p>dsa</p>
                         <p>interview</p>
@@ -130,7 +131,7 @@
                 </div>
 
                 <div class="result ">
-                    <a href="https://www.youtube.com/watch?v=xk4_1vDrzzo" target="_blank"><p>Java full course</p></a>
+                    <p>Java full course</p>
                     <div class="tags">
                         <p>dsa</p>
                         <p>interview</p>
@@ -163,7 +164,7 @@
                 </div>
 
                 <div class="result ">
-                   <a href="https://www.coursera.org/specializations/core-java"><p>Core Java</p></a>
+                   <p>Core Java</p>
                     <div class="tags">
                         <p>core</p>
                         <p>interview</p>

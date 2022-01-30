@@ -22,7 +22,7 @@ a {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  align-content: center;
+  /* align-content: center; */
 }
 
 .main-body {
@@ -208,9 +208,12 @@ a {
 }
 .box:hover {
   transform: scale(1.09);
-  box-shadow: 7px 7px 7px rgb(0, 0, 0);
+  box-shadow: 7px 7px 7px rgb(0, 0, 0); 
 }
 
+.hideIt{
+  display: none;
+}
 .box1 {
   background-image: url(course-photo/computerNetwork7.jpg);
 }
